@@ -58,9 +58,9 @@ through increased borrowing activity.
 
 4.  Run below command to close the project solution.
 
-`git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git
-`
-> ![](./media/image3.png)
+`git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git`
+
+![](./media/image3.png)
 
 5.  Install Python dependencies (like azureml-sdk):Run below commands
 
@@ -80,14 +80,13 @@ through increased borrowing activity.
 
 7.  Wait for the script to run completely. It takes 4-5 minutes to
     complete.
-
 ![](./media/image6.png)
 
 ![](./media/image7.png)
 
 8.  Close the **Cloud shell** and click on **Resource group** tile.
 
-> ![](./media/image8.png)
+![](./media/image8.png)
 
 9.  Click on resource group name.
 
@@ -95,19 +94,18 @@ through increased borrowing activity.
 
 10. Make sure all the resources are created.
 
-![A screenshot of a computer Description automatically
-generated](./media/image10.png)
+![](./media/image10.png)
 
 11. Click on **Azure Machine Learning workspace** name.
 
 ![](./media/image11.png)
 
 12. Click on **Access control (IAM)** from left navigation menu, click
-    on **Add -\> Add role assignment.**
+    on **Add -> Add role assignment.**
 
 ![](./media/image12.png)
 
-13. Select **Privileged administrator roles -\> Contributor** role and
+13. Select **Privileged administrator roles -> Contributor** role and
     then click **Next.**
 
 > ![](./media/image13.png)
@@ -141,59 +139,50 @@ generated](./media/image10.png)
 
 ![](./media/image19.png)
 
-20. Click on **Compute** **cluster**s , cluster should have created
+20. Click on **Compute cluster**s , cluster should have created
     successfully.
 
 ![](./media/image20.png)
 
 ### Task 2 : Assing roles to the subscription
 
-1.  Switch back to **Azure portal** home page and click on **Resource
-    group** tile.
+1.  Switch back to **Azure portal** home page and click on **Resource group** tile.
 
-![A screenshot of a computer Description automatically
-generated](./media/image21.png)
+![](./media/image21.png)
 
 2.  Click on your resource group name.
 
-![A screenshot of a chat Description automatically
-generated](./media/image22.png)
+![](./media/image22.png)
 
 3.  Click on **Access control(IAM)** from left navigation menu, select
-    **Add - \> Add role assignment.**
+    **Add - > Add role assignment.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+![](./media/image23.png)
 
 4.  Search for `AzureML Compute Operator` and select it. Click on
     **Next** .
 
-![A screenshot of a computer Description automatically
-generated](./media/image24.png)
+![](./media/image24.png)
 
 5.  Select **users, group or service principal** radio button, click on
     **select members** hyper link. Search for your **aoaitfsXXXX**
     (relace XXXX with your tenant number) id and select it. Finally,
     click on **Select** button
 
-![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+![](./media/image25.png)
 
 6.  Click on **Next**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image26.png)
+![](./media/image26.png)
 
 7.  Click on **Review + assign** now.
 
-![A screenshot of a computer Description automatically
-generated](./media/image27.png)
+![](./media/image27.png)
 
-8.  After role assignment successful, click on **Add -\> Add role
+8.  After role assignment successful, click on **Add -> Add role
     assignment**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image28.png)
+![](./media/image28.png)
 
 9.  Search for below roles and assign them. Repeat above steps for below
     roles as well
@@ -208,150 +197,122 @@ generated](./media/image28.png)
 
 `Azure AI Developer`
 
-![A screenshot of a computer Description automatically
-generated](./media/image29.png)
+![](./media/image29.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image30.png)
+![](./media/image30.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image31.png)
+![](./media/image31.png)
 
-![A screenshot of a search service Description automatically
-generated](./media/image32.png)
+![](./media/image32.png)
 
-![A screenshot of a web page Description automatically
-generated](./media/image33.png)
+![](./media/image33.png)
 
 21. Click on **Role assignments.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image34.png)
+![](./media/image34.png)
 
 22. You should be able to see all the assigned roles to your tenant.
 
-![A screenshot of a computer Description automatically
-generated](./media/image35.png)
+![](./media/image35.png)
 
 ### Task 3 : Uploaded resource into Azure Storage account
 
-> When you create an Azure Machine Learning workspace, a Storage Account
-> is automatically created and connected to your workspace. You'll
-> explore how the Storage Account is connected.
+ When you create an Azure Machine Learning workspace, a Storage Account
+is automatically created and connected to your workspace. You'll
+explore how the Storage Account is connected.
 
-1.  In Azure portal- \> Resource group , click on Storage account name
+1.  In Azure portal- > Resource group , click on Storage account name
 
-![A screenshot of a computer Description automatically
-generated](./media/image36.png)
+![](./media/image36.png)
 
-2.  Select **Configuration** under **Settings**. Then set **Allow Blob
-    anonymous access** to **Enabled** and then click **Save**.
+2.  Select **Configuration** under **Settings**. Then set **Allow Blob
+    anonymous access** to **Enabled** and then click **Save**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image37.png)
+![](./media/image37.png)
 
 3.  Click on **Containers** under **Data storage** and click
     **azureml-blobstore-XXXXXXXXXXXXX** container.
 
-![A screenshot of a computer Description automatically
-generated](./media/image38.png)
+![](./media/image38.png)
 
-4.  Click on **Upload -\> Browse for files** . select the files from
+4.  Click on **Upload -> Browse for files** . select the files from
     **C:\Labfiles\resources** folder and then click on **Open**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image39.png)
+![](./media/image39.png)
 
 5.  Click on **Upload**
 
-![A screenshot of a computer Description automatically
-generated](./media/image40.png)
+![](./media/image40.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image41.png)
+![](./media/image41.png)
 
 ### Task 4 : Register Datasets
 
-1.  Switch back to AML studio tab ( open new tab -\> Azure Portal-\>
-    Resource group -\> AML resource -\> Launch Azure Machine learn
+1.  Switch back to AML studio tab ( open new tab -> Azure Portal->
+    Resource group -> AML resource -> Launch Azure Machine learn
     studio), Under **Asset** , click on **Data** from left navigation
-    menu and then click on **Data asset-\> Create.**
+    menu and then click on **Data asset-> Create.**
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image42.png)
+![](./media/image42.png)
 
 2.  Enter the name as : `Dataset1` and select Type : **Tabular** and
     then click on **Next**.
 
-![A screenshot of a data asset Description automatically
-generated](./media/image43.png)
+![](./media/image43.png)
 
 3.  Select **From local files tile** and then click on **Next**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image44.png)
+![](./media/image44.png)
 
 4.  Select Datastore type **as Azure Blob storage** and select the
     default blob storage( you can check in Data-\> Datastore) and click
     on **Next**.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image45.png)
+![](./media/image45.png)
 
 5.  Click on **Upload files or folder** drop down and select **Upload
     files.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image46.png)
+![](./media/image46.png)
 
-6.  Browse to `C:\Labfiles\Data` folder and select **Dataset1** and
+6.  Browse to **C:\Labfiles\Data** folder and select **Dataset1** and
     then click on **Open**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image47.png)
+![](./media/image47.png)
 
 7.  Click **Next** now.
 
-![A screenshot of a computer Description automatically
-generated](./media/image48.png)
+![](./media/image48.png)
 
 8.  Review the data and change If you want to then click on **Next**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image49.png)
+![](./media/image49.png)
 
 9.  Click **Next** now.
 
-![A screenshot of a computer Description automatically
-generated](./media/image50.png)
+![](./media/image50.png)
 
 10. Review the details and then click on **Create**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image51.png)
+![](./media/image51.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image52.png)
+![](./media/image52.png)
 
-11. Repeat above steps and register Dataset2.CSV with the name
-    `Dataset2` also.
+11. Repeat above steps and register Dataset2.CSV with the name `Dataset2` also.
 
-![A screenshot of a computer Description automatically
-generated](./media/image53.png)
+![](./media/image53.png)
 
 ### Task 5 : Access Notebook to train a model with the Azure Machine 
 
-1.  Click on **Compute -\> Computer instance.** Select **Compute
+1.  Click on **Compute -> Computer instance.** Select **Compute
     instance** name and then click under **Application** and select
     **Terminal.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image54.png)
+![](./media/image54.png)
 
 2.  Close the pop up window.
 
-![A screenshot of a computer Description automatically
-generated](./media/image55.png)
+![](./media/image55.png)
 
 12. In the terminal, install the Python SDK on the compute instance by
     running the following commands in the terminal:
@@ -361,178 +322,150 @@ generated](./media/image55.png)
 >Note : Ignore any (error) messages that say that the packages couldn't
 >be found and uninstalled.
 
-![A screenshot of a computer Description automatically
-generated](./media/image56.png)
+![](./media/image56.png)
 
 13. Run the following command to clone a Git repository containing a
     notebook, data, and other files to your workspace:
 
 `git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git`
 
-![A screenshot of a computer Description automatically
-generated](./media/image57.png)
+![](./media/image57.png)
 
-14. When the command has completed, in the **Files** pane,
-    click **↻** to refresh the view and verify that a
-    new **Users/*your-user-name*/MLops…** folder has been created.
+14. When the command has completed, in the **Files** pane,
+    click **↻** to refresh the view and verify that a
+    new **Users/*your-user-name*/MLops…** folder has been created.
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image58.png)
+![](./media/image58.png)
 
 15. Stay back in the same page to continue.
 
 ### Task 6 : Run the notebook to Work with Data
 
-1.  Expand **models** folder and select the
-    **ContosoBankAMLmodel.ipynb** notebook.
+1.  Expand **models** folder and select the **ContosoBankAMLmodel.ipynb** notebook.
 
 2.  Run the first cell to check the latest version of azure-ai-ml
     package.
 
-> Note: If the azure-ai-ml package is not installed, run **pip install
-> azure-ai-ml** to install it
+> Note: If the azure-ai-ml package is not installed, run **pip install
+> azure-ai-ml** to install it
 
-![A screenshot of a computer Description automatically
-generated](./media/image59.png)
+![](./media/image59.png)
 
-> Select **Authenticate** and follow the necessary steps if a
+> Note : Select **Authenticate** and follow the necessary steps if a
 > notification appears asking you to authenticate.
 
-3.  Verify that the notebook uses the **Python 3.8 - AzureML** kernel.If
+3.  Verify that the notebook uses the **Python 3.8 - AzureML** kernel.If
     its not using then select it from drop down.
 
-![A screenshot of a computer Description automatically
-generated](./media/image60.png)
+![](./media/image60.png)
 
 4.  Restart the kernel as shown in below image.
 
-![A screenshot of a computer Description automatically
-generated](./media/image61.png)
+![](./media/image61.png)
 
 5.  Click on **Restart**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image62.png)
+![](./media/image62.png)
 
 6.  Read description of each cell and run it
 
-![A screenshot of a computer Description automatically
-generated](./media/image63.png)
+![](./media/image63.png)
 
 7.  Run cell to list datastores in storage account.
 
-![A screenshot of a computer Description automatically
-generated](./media/image64.png)
+![](./media/image64.png)
 
 8.  Run the cell to clean , merge datasets and save into
     **merge_data.CSV** file.
 
-![A screenshot of a computer code Description automatically
-generated](./media/image65.png)
+![](./media/image65.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image66.png)
+![](./media/image66.png)
 
 8.Run cell to preview merge_data.csv file.Run all the cells
 
-![A screenshot of a computer Description automatically
-generated](./media/image67.png)
+![](./media/image67.png)
 
 9.  Run cell to Describe the data after transposing
 
-![A screenshot of a computer Description automatically
-generated](./media/image68.png)
+![](./media/image68.png)
 
 10. Run all the cells and check merged_data to check number of rows.
 
-![A screenshot of a computer Description automatically
-generated](./media/image69.png)
+![](./media/image69.png)
 
 11. Run cell to show unique values in the LoadOnCard Column.
 
-![A screenshot of a computer Description automatically
-generated](./media/image70.png)
+![](./media/image70.png)
 
 12. Run cell to show distribution of data in LoanonCard column
 
-![A screen shot of a graph Description automatically
-generated](./media/image71.png)
+![](./media/image71.png)
 
 13. Read and run each cell under Model Preparation and explore.
 
-![A screenshot of a computer Description automatically
-generated](./media/image72.png)
+![](./media/image72.png)
 
-![A screenshot of a computer program Description automatically
-generated](./media/image73.png)
+![](./media/image73.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image74.png)
+![](./media/image74.png)
 
 14. Read and run cell in Apply Logistic Regression
 
-![A screenshot of a computer Description automatically
-generated](./media/image75.png)
+![](./media/image75.png)
 
 15. Run cell to define and register financial-experiment-env environment
 
-![A screenshot of a computer Description automatically
-generated](./media/image76.png)
+![](./media/image76.png)
 
 16. Run cell to view registered environments.
 
-![A screenshot of a computer Description automatically
-generated](./media/image77.png)
+![](./media/image77.png)
 
 17. Run all cells to run an experiment.
 
-![A screenshot of a computer program Description automatically
-generated](./media/image78.png)
+![](./media/image78.png)
 
 18. Run the experiment cell . wait for the experiment to complete . It
-    takes **15-20 minutes.** .You can keep open this tab and perform  task 7 - Task 11 in new tabs during this wait time. Come back to this tab after 10 min
+    takes **15-20 minutes.**. You keep this tab open and continue with Task 7 - Task 11. Comeback to this after 10 min.
 
-![A screenshot of a computer Description automatically
-generated](./media/image79.png)
+![](./media/image79.png)
 
-![A screenshot of a computer program Description automatically
-generated](./media/image80.png)
+![](./media/image80.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image81.png)19. Run each cell under deploy the model
-as a web service.
+![](./media/image81.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image82.png)
+19. Run each cell under deploy the model as a web service.
+
+![](./media/image82.png)
 
 19. Run the cell to provide web service endpoint.
 
-![A screenshot of a computer Description automatically
-generated](./media/image83.png)
+![](./media/image83.png)
 
 20. Run all cells to predict Asset and liability Customers.
 
-![A screenshot of a computer Description automatically
-generated](./media/image84.png)
+![](./media/image84.png)
 
 ### Task 7 : Set Up Azure AI Search service
 
 1.  Switch back to Azure portal and search for **Azure AI search** and
     select it.
 
-![A screenshot of a computer Description automatically
-generated](./media/image85.png)
+![](./media/image85.png)
 
 2.  Click on **Create**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image86.png)
+![](./media/image86.png)
 
 3.  Select below values and then click on **Review + Create**.
 
     - Subscription : Your Azure subscription.
-    - Resource group – your resource group
+
+    - Resource group - your resource group
+
     - Service name - `cbsb-aisearchXXXX` ( replace XXXX with unique number)
+
     - Location : **west us**/north Europe /location near to you
 
 ![](./media/image87.png)
@@ -558,18 +491,24 @@ generated](./media/image86.png)
 
 ### Task 8 : Create Azure AI multi-service resource 
 
-1.  Create an Azure AI multi-service resource in the **same region as
+1.  Create an Azure AI multi-service resource in the **same region as
     your search service region.**
 
-2.  Open a new tab in a browser and go to `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`.  Sign in with your Azure subscription account/
+2.  Open a new tab in a browser and go to  `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`
+    Sign in with your Azure subscription account/
 
 3.  Enter below values and then click on **Review + create**.
 
     - Subscription : Your Azure subscription
+
     - Resource group : Your existing resource group
+
     - Region : **Same region as your Search service region**
-    - Name : `**`cbsb-aimultiserviceXXXX` (XXXX can be unique number)**
+
+    - Name : `cbsb-aimultiserviceXXXX` (XXXX can be unique number)
+
     - Price tier : Standard S0
+
     - Select **By checking this box I acknowledge that I have read and understood all the terms below** check box.
 
 ![](./media/image92.png)
@@ -588,33 +527,34 @@ generated](./media/image86.png)
 6.  Click on **Keys and Endpoint** under **Resource management**. Make a
     note of Key and endpoint to use them in next tasks.
 
-![A screenshot of a computer Description automatically
-generated](./media/image96.png)
+![](./media/image96.png)
 
 ### Task 9 : Create Azure OpenAI resource
 
-1.  Open a new tab and search for `Azure OpenAI` service and select
+1.  Open a new tab and search for **Azure OpenAI** service and select
     it.
 
-![A screenshot of a computer Description automatically
-generated](./media/image97.png)
+![](./media/image97.png)
 
 2.  Click on **Create**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image98.png)
+![](./media/image98.png)
 
 3.  Enter below details and click on
 
     - Subscription : Azure subscription
-    - Resource group – your Azure resource group
+
+    - Resource group -  your Azure resource group
+
     - Region : **West US/East US**
-    - Name – `cbazopenaiXXXX` (XXXX can be unique number)
+
+    - Name -  `cbazopenaiXXXX` (XXXX can be unique number)
+
     - Price tier -**Standard**
 
 ![](./media/image99.png)
 
-4.  Click on **Next- \> Next- \> Create.**
+4.  Click on **Next- > Next- > Create.**
 
 ![](./media/image100.png)
 
@@ -631,7 +571,7 @@ generated](./media/image98.png)
     Copy key and assign to AZURE_OPENAI_KEY.Save both these variables in
     your Notepad
 
-> ![](./media/image104.png)
+![](./media/image104.png)
 
 7.  Click on **Overview**, right click on **Go to Azure OpenAI Studio**
     and select **Open link in new tab**.
@@ -640,19 +580,17 @@ generated](./media/image98.png)
 
 8.  Azure OpenAI opens in new tab. Sign in if required. Close pop -ups
 
-> ![A screenshot of a computer Description automatically
-> generated](./media/image106.png)
+![](./media/image106.png)
 
 9.  Click on **Deployment** from left navigation menu, select **Deploy
-    model -\> Deploy base model.**
+    model -> Deploy base model.**
 
 ![](./media/image107.png)
 
 10. Search for `gpt-35-turbo-16k` and select it and then click on
     **Confirm**
 
-![A screenshot of a computer Description automatically
-generated](./media/image108.png)
+![](./media/image108.png)
 
 11. Click on **Customize** button
 
@@ -666,38 +604,38 @@ generated](./media/image108.png)
 
 13. Repeat above steps and deploy- `text-embedding-ada-002`
 
-![A screenshot of a computer Description automatically
-generated](./media/image111.png)
+![](./media/image111.png)
 
 ![](./media/image112.png)
 
-14. Set maximum **Tokens per Minute Rate Limit** and then click on
-    **Deploy.**
+14. Set maximum **Tokens per Minute Rate Limit** and then click on **Deploy.**
 
-> ![](./media/image113.png)
+![](./media/image113.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image114.png)
+![](./media/image114.png)
 
 ### Task 10 : Add a data source to Azure AI search service
 
-1.  Switch back to **Azure portal -> Resource group- \> Azure AI search
-    service.**
+1.  Switch back to Azure portal -> Resource group- > Azure AI search
+    service.
 
 ![](./media/image115.png)
 
-2.  Click on **Search management -\> Data source** . Select **Add data
-    source -\> Add data source.**
+2.  Click on **Search management -> Data source** . Select **Add data source -> Add data source.**
 
 ![](./media/image116.png)
 
 3.  Select below values and then click on **Create.**
 
     - Data source : Azure blob Storage
+
     - Name : unique name (eg : `enrichdatasource`)
+
     - Subscription : your Azure subscription
+
     - Storage account- your Azure storage account
-    - Blob container – azureml-blob-XXXX (your default blob container where raw data is uploaded.)
+
+    - Blob container -  `azureml-blob-XXXX` (your default blob container where raw data is uploaded.)
 
 ![](./media/image117.png)
 
@@ -726,7 +664,7 @@ generated](./media/image114.png)
 
 > ![](./media/image122.png)
 
-5.  Enter Index name as - `customer-index` , click on **Add filed**.
+5.  Enter Index name as - **customer-index ,** click on **Add filed**.
 
 > ![](./media/image123.png)
 
@@ -737,7 +675,14 @@ generated](./media/image114.png)
 
 7.  Add below fields and then click **Next : Create an indexer**
 
-[TABLE]
+    - Field name -  `customer_name` , Type - Edm.String ,Skills -All
+
+    - Field name -  `CustomerSince` , Type - Edm.Int32 ,Skills -All
+
+    - Field name -  `campaign_result` , Type - Edm.String ,Skills -All
+
+    - Field name -  `age` , Type - Edm.String ,Skills -All
+
 
 > ![](./media/image125.png)
 
@@ -746,16 +691,15 @@ generated](./media/image114.png)
 
 ![](./media/image126.png)
 
-![A screenshot of a computer Description automatically
-generated](./media/image127.png)
+![](./media/image127.png)
 
 6.  Click on **Indexer** under **Search management**, you should see new
     indexer with documents
 
 ![](./media/image128.png)
 
-7.  Click on **Indexes -\> customer-index.** Wait for the Vetor index
-    size to update**.**
+7.  Click on **Indexes -> customer-index.** Wait for the Vetor index
+    size to update.
 
 ![](./media/image129.png)
 
@@ -768,7 +712,7 @@ generated](./media/image127.png)
 1.  Open a new tab and go to `https://ai.azure.com` and sign in with
     your Azure subscription account.
 
-![](./media/image131.png)
+> ![](./media/image131.png)
 
 2.  Click on **New project.**
 
@@ -786,7 +730,7 @@ generated](./media/image127.png)
 
     - Subscription : Your Azure subscription
 
-    - Resource group – your existing resource group
+    - Resource group - your existing resource group
 
     - Region -same region as your Azure Open AI region
 
@@ -831,9 +775,9 @@ generated](./media/image127.png)
 11. Enter below prompt in Type here query text bod and press send
     button.
 
-`Details of Customer ID- 3  
+`Details of Customer ID- 3`
 
-> ![](./media/image143.png)
+![](./media/image143.png)
 
 12. Enter below prompt and press send
 
@@ -841,22 +785,23 @@ generated](./media/image127.png)
 
 ![](./media/image144.png)
 
-![]](./media/image145.png)
+![](./media/image145.png)
 
-13. Now, you are ready to deploy your app. Click on **Deploy- > as a
-    web app.**
+13. Now, you are ready to deploy your app. Click on **Deploy- > as a web app.**
 
-> ![](./media/image146.png)
+![](./media/image146.png)
 
-14. Enter below details and then click on **Deploy**. Deployment takes
-    5-10 min to complete.
+14. Enter below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
 
-    - Name : should be unique name (eg `mlappchatappXXXX` – XXXX can be uniquenumber)
+    - Name : should be unique name (eg `mlappchatappXXXX` - XXXX can be unique number)
+
     - Subscription : Your Azure subscription
-    - Resource group – your resource existing resource group
-    - Location – West US / East US/East US 2 ( usually east us has high demand and deployment may fail). You can use the same location as the hub
+
+    - Resource group - your resource existing resource group
+
+    - Location - West US / East US/East US 2 ( usually east us has high demand and deployment may fail). You can use the same location as the hub
 
     - Pricing plan : Standard (S1) /S2
 
@@ -868,7 +813,7 @@ generated](./media/image127.png)
 
 ### Task 13 : Access and Explore the Chatapp.
 
-1.  Go back Azure Portal Home page. Search for **App Services** and
+1.  Go back Azure Portal Home page. Search for `App Services and
     select it from drop down as shown in the below image.
 
 ![](./media/image150.png)
@@ -893,8 +838,7 @@ generated](./media/image127.png)
 
 ![](./media/image154.png)
 
-6.  Go back to AML Studio tab -> Assets -> Endpoints ->
-    finance-service. Copy the REST endpoint value.
+6.  Go back to AML Studio tab -> Assets -> Endpoints -> finance-service. Copy the REST endpoint value.
 
 ![](./media/image155.png)
 
@@ -917,8 +861,8 @@ generated](./media/image127.png)
 
 ![](./media/image159.png)
 
-10. From the collapsible left menu under **Settings**,
-    select **Authentication**. **Delete** the existing Identity provider
+10. From the collapsible left menu under **Settings**,
+    select **Authentication**. **Delete** the existing Identity provider
     and confirm deletion.
 
 ![](./media/image160.png)
@@ -944,8 +888,7 @@ generated](./media/image127.png)
 9.  Click on **Overview** and click on **Restart**. Confirm restart by
     clicking on **Yes**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image165.png)
+![](./media/image165.png)
 
 10. Click on **Overview** and then click **on Default domain**.
 
@@ -958,8 +901,6 @@ generated](./media/image165.png)
 12. App opens,enter below prompts and explore it.
 
 `List high value customers`
-
-`give customer details who spend >30 year
 
 `give customer details who mortgage is not 0`
 
