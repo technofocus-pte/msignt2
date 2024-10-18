@@ -902,7 +902,7 @@ explore how the Storage Account is connected.
 
 `List high value customers`
 
-`give customer details who mortgage is not 0`
+`give customer details whose mortgage is not 0`
 
 ![](./media/image168.png)
 
