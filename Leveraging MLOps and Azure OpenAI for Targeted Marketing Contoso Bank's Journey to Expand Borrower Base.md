@@ -302,7 +302,175 @@ explore how the Storage Account is connected.
 
 ![](./media/image53.png)
 
-### Task 5 : Access Notebook to train a model with the Azure Machine 
+### Task 5 : Set Up Azure AI Search service
+
+1.  Switch back to Azure portal and search for **Azure AI search** and
+    select it.
+
+![](./media/image85.png)
+
+2.  Click on **Create**.
+
+![](./media/image86.png)
+
+3.  Select below values and then click on **Review + Create**.
+
+    - Subscription : Your Azure subscription.
+
+    - Resource group - your resource group
+
+    - Service name - `cbsb-aisearchXXXX` ( replace XXXX with unique number)
+
+    - Location : **west us**/north Europe /location near to you
+
+![](./media/image87.png)
+
+4.  Click on **Create** now.
+
+> ![](./media/image88.png)
+
+5.  Wait for the deployment and then click on **Go to resource**.
+
+![](./media/image89.png)
+
+6.  Open a Notepad and make a note of URI value as
+    **AZURE_SEARCH_ENDPOINT** ,we use it to communicate to the service.
+
+![](./media/image90.png)
+
+7.  Navigate to the **Keys** section and grab the API Key and save it as
+    AZURE_SEARCH_KEY in your notepad. You will need this to communicate
+    with the service.
+
+> ![](./media/image91.png)
+
+### Task 6 : Create Azure AI multi-service resource 
+
+1.  Create an Azure AI multi-service resource in the **same region as
+    your search service region.**
+
+2.  Open a new tab in a browser and go to  `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`
+    Sign in with your Azure subscription account/
+
+3.  Enter below values and then click on **Review + create**.
+
+    - Subscription : Your Azure subscription
+
+    - Resource group : Your existing resource group
+
+    - Region : **Same region as your Search service region**
+
+    - Name : `cbsb-aimultiserviceXXXX` (XXXX can be unique number)
+
+    - Price tier : Standard S0
+
+    - Select **By checking this box I acknowledge that I have read and understood all the terms below** check box.
+
+![](./media/image92.png)
+
+![](./media/image93.png)
+
+4.  Review the details and click on **Create**.
+
+![](./media/image94.png)
+
+5.  Wait for the deployment to be completed. Deployment takes 1-2 min.
+    Click on **Go to resource** button.
+
+![](./media/image95.png)
+
+6.  Click on **Keys and Endpoint** under **Resource management**. Make a
+    note of Key and endpoint to use them in next tasks.
+
+![](./media/image96.png)
+
+### Task 7 : Create Azure OpenAI resource
+
+1.  Open a new tab and search for **Azure OpenAI** service and select
+    it.
+
+![](./media/image97.png)
+
+2.  Click on **Create**.
+
+![](./media/image98.png)
+
+3.  Enter below details and click on
+
+    - Subscription : Azure subscription
+
+    - Resource group -  your Azure resource group
+
+    - Region : **West US/East US**
+
+    - Name -  `cbazopenaiXXXX` (XXXX can be unique number)
+
+    - Price tier -**Standard**
+
+![](./media/image99.png)
+
+4.  Click on **Next- > Next- > Create.**
+
+![](./media/image100.png)
+
+![](./media/image101.png)
+
+![](./media/image102.png)
+
+5.  Once the deployment completes, click on **Go to resource**
+
+![](./media/image103.png)
+
+6.  Expand Resource management from left navigation ,click on Keys and
+    Endpoint.Copy endpoint value and assign to AZURE_OPENAI_ENDPOINT ,
+    Copy key and assign to AZURE_OPENAI_KEY.Save both these variables in
+    your Notepad
+
+![](./media/image104.png)
+
+7.  Click on **Overview**, right click on **Go to Azure OpenAI Studio**
+    and select **Open link in new tab**.
+
+![](./media/image105.png)
+
+8.  Azure OpenAI opens in new tab. Sign in if required. Close pop -ups
+
+![](./media/image106.png)
+
+9.  Click on **Deployment** from left navigation menu, select **Deploy
+    model -> Deploy base model.**
+
+![](./media/image107.png)
+
+10. Search for `gpt-35-turbo-16k` and select it and then click on
+    **Confirm**
+
+![](./media/image108.png)
+
+11. Click on **Customize** button
+
+![](./media/image109.png)
+
+12. Select available region(same region as your Azure OpenAI region) and
+    set Tokens per Minute Rate limit to max and then click on
+    **Deploy**.
+
+![](./media/image110.png)
+
+13. Repeat above steps and deploy- `text-embedding-ada-002`
+
+![](./media/image111.png)
+
+![](./media/image112.png)
+
+14. Set maximum **Tokens per Minute Rate Limit** and then click on **Deploy.**
+
+![](./media/image113.png)
+
+![](./media/image114.png)
+
+
+### Task 8 : Access Notebook to train a model with the Azure Machine 
 
 1.  Click on **Compute -> Computer instance.** Select **Compute
     instance** name and then click under **Application** and select
@@ -339,7 +507,7 @@ explore how the Storage Account is connected.
 
 15. Stay back in the same page to continue.
 
-### Task 6 : Run the notebook to Work with Data
+### Task 9 : Run the notebook to Work with Data
 
 1.  Expand **models** folder and select the **ContosoBankAMLmodel.ipynb** notebook.
 
@@ -427,7 +595,7 @@ explore how the Storage Account is connected.
 ![](./media/image78.png)
 
 18. Run the experiment cell . wait for the experiment to complete . It
-    takes **15-20 minutes.**. You keep this tab open and continue with Task 7 - Task 11. Comeback to this after 10 min.
+    takes **15-20 minutes.**. 
 
 ![](./media/image79.png)
 
@@ -446,173 +614,6 @@ explore how the Storage Account is connected.
 20. Run all cells to predict Asset and liability Customers.
 
 ![](./media/image84.png)
-
-### Task 7 : Set Up Azure AI Search service
-
-1.  Switch back to Azure portal and search for **Azure AI search** and
-    select it.
-
-![](./media/image85.png)
-
-2.  Click on **Create**.
-
-![](./media/image86.png)
-
-3.  Select below values and then click on **Review + Create**.
-
-    - Subscription : Your Azure subscription.
-
-    - Resource group - your resource group
-
-    - Service name - `cbsb-aisearchXXXX` ( replace XXXX with unique number)
-
-    - Location : **west us**/north Europe /location near to you
-
-![](./media/image87.png)
-
-4.  Click on **Create** now.
-
-> ![](./media/image88.png)
-
-5.  Wait for the deployment and then click on **Go to resource**.
-
-![](./media/image89.png)
-
-6.  Open a Notepad and make a note of URI value as
-    **AZURE_SEARCH_ENDPOINT** ,we use it to communicate to the service.
-
-![](./media/image90.png)
-
-7.  Navigate to the **Keys** section and grab the API Key and save it as
-    AZURE_SEARCH_KEY in your notepad. You will need this to communicate
-    with the service.
-
-> ![](./media/image91.png)
-
-### Task 8 : Create Azure AI multi-service resource 
-
-1.  Create an Azure AI multi-service resource in the **same region as
-    your search service region.**
-
-2.  Open a new tab in a browser and go to  `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`
-    Sign in with your Azure subscription account/
-
-3.  Enter below values and then click on **Review + create**.
-
-    - Subscription : Your Azure subscription
-
-    - Resource group : Your existing resource group
-
-    - Region : **Same region as your Search service region**
-
-    - Name : `cbsb-aimultiserviceXXXX` (XXXX can be unique number)
-
-    - Price tier : Standard S0
-
-    - Select **By checking this box I acknowledge that I have read and understood all the terms below** check box.
-
-![](./media/image92.png)
-
-![](./media/image93.png)
-
-4.  Review the details and click on **Create**.
-
-![](./media/image94.png)
-
-5.  Wait for the deployment to be completed. Deployment takes 1-2 min.
-    Click on **Go to resource** button.
-
-![](./media/image95.png)
-
-6.  Click on **Keys and Endpoint** under **Resource management**. Make a
-    note of Key and endpoint to use them in next tasks.
-
-![](./media/image96.png)
-
-### Task 9 : Create Azure OpenAI resource
-
-1.  Open a new tab and search for **Azure OpenAI** service and select
-    it.
-
-![](./media/image97.png)
-
-2.  Click on **Create**.
-
-![](./media/image98.png)
-
-3.  Enter below details and click on
-
-    - Subscription : Azure subscription
-
-    - Resource group -  your Azure resource group
-
-    - Region : **West US/East US**
-
-    - Name -  `cbazopenaiXXXX` (XXXX can be unique number)
-
-    - Price tier -**Standard**
-
-![](./media/image99.png)
-
-4.  Click on **Next- > Next- > Create.**
-
-![](./media/image100.png)
-
-![](./media/image101.png)
-
-![](./media/image102.png)
-
-5.  Once the deployment completes, click on **Go to resource**
-
-![](./media/image103.png)
-
-6.  Expand Resource management from left navigation ,click on Keys and
-    Endpoint.Copy endpoint value and assign to AZURE_OPENAI_ENDPOINT ,
-    Copy key and assign to AZURE_OPENAI_KEY.Save both these variables in
-    your Notepad
-
-![](./media/image104.png)
-
-7.  Click on **Overview**, right click on **Go to Azure OpenAI Studio**
-    and select **Open link in new tab**.
-
-![](./media/image105.png)
-
-8.  Azure OpenAI opens in new tab. Sign in if required. Close pop -ups
-
-![](./media/image106.png)
-
-9.  Click on **Deployment** from left navigation menu, select **Deploy
-    model -> Deploy base model.**
-
-![](./media/image107.png)
-
-10. Search for `gpt-35-turbo-16k` and select it and then click on
-    **Confirm**
-
-![](./media/image108.png)
-
-11. Click on **Customize** button
-
-![](./media/image109.png)
-
-12. Select available region(same region as your Azure OpenAI region) and
-    set Tokens per Minute Rate limit to max and then click on
-    **Deploy**.
-
-![](./media/image110.png)
-
-13. Repeat above steps and deploy- `text-embedding-ada-002`
-
-![](./media/image111.png)
-
-![](./media/image112.png)
-
-14. Set maximum **Tokens per Minute Rate Limit** and then click on **Deploy.**
-
-![](./media/image113.png)
-
-![](./media/image114.png)
 
 ### Task 10 : Add a data source to Azure AI search service
 
