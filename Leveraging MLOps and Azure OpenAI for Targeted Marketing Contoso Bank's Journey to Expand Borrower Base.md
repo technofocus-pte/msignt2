@@ -401,7 +401,7 @@ explore how the Storage Account is connected.
 
     - Resource group -  your Azure resource group
 
-    - Region : **West US/East US**
+    - Region : **East US**
 
     - Name -  `cbazopenaiXXXX` (XXXX can be unique number)
 
