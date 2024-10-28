@@ -18,6 +18,20 @@ maintaining the same budget as the last campaign. This initiative is
 pivotal for driving growth and maximizing the bank's profitability
 through increased borrowing activity.
 
+**Lab Objective**
+
+"As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
+In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, that makes use of Azure AI, AML and MLOps to achieve the solution."
+
+**At the end of this lab you will know how-to:**
+
+    1. Import data sets to storage account and filter/ usisng python SDK notebook
+    2. Build a Machine learning model using Azure machine Learning
+    3. Use AI-based recommendation systems for prediction
+    4. Using insights from the enhanced segmentation
+    5. Use Azure AI Services to perform Sentiment analysis and key phrase extraction
+    6. use Azure AI Bot Service for customer engagement using chatbots
+
 **Tools/Technologies/Apps used :**
 
 1.  **Azure Machine Learning (AML)**: For building, training, and
