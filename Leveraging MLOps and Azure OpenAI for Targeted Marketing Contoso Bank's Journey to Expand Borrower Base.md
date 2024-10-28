@@ -25,12 +25,12 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 **At the end of this lab you will know how-to:**
 
-1. Import data sets to storage account and filter/ usisng python SDK notebook
+1. Import data sets to storage account and clean the data using python SDK notebook
 2. Build a Machine learning model using Azure machine Learning
 3. Use AI-based recommendation systems for prediction
 4. Using insights from the enhanced segmentation
-5. Use Azure AI Services to perform Sentiment analysis and key phrase extraction
-6. use Azure AI Bot Service for customer engagement using chatbots
+5. Use Azure AI Search Services to enrich the chatbot with search
+6. use Azure AI Bot Service for customer engagement using chatbot
 
 **Tools/Technologies/Apps used :**
 
