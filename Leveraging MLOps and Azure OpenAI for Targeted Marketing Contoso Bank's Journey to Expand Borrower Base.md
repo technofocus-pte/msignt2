@@ -86,7 +86,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
-+++chmod +x setup.sh++=
++++chmod +x setup.sh+++
 
 +++./setup.sh+++
 
