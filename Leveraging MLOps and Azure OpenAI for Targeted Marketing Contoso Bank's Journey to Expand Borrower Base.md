@@ -25,12 +25,12 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 **At the end of this lab you will know how-to:**
 
-1. Import data sets to storage account and clean the data using python SDK notebook
-2. Build a Machine learning model using Azure machine Learning
-3. Use AI-based recommendation systems for prediction
-4. Using insights from the enhanced segmentation
-5. Use Azure AI Search Services to enrich the chatbot with search
-6. use Azure AI Bot Service for customer engagement using chatbot
+    - Import data sets to storage account and clean the data using python SDK notebook
+    - Build a Machine learning model using Azure machine Learning
+    - Use AI-based recommendation systems for prediction
+    - Using insights from the enhanced segmentation
+    - Use Azure AI Search Services to enrich the chatbot with search
+    - use Azure AI Bot Service for customer engagement using chatbot
 
 **Tools/Technologies/Apps used :**
 
@@ -58,31 +58,31 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 ### **Task 1: Create Azure machine learning resources** 
 
-1.   In the Edge browser, navigate to Azure Portal at
+1. In the Edge browser, navigate to Azure Portal at
 `https://portal.azure.com` and Sign In using your Azure user credentials (provided in the resources section).
 
-2.  Click on Cloud shell and select **Bash**.
+2. Click on Cloud shell and select **Bash**.
 
 ![](./media/image1.png)
 
-3.  Select **No storage account** **required** radio button , select
+3. Select **No storage account** **required** radio button , select
     **your Azure subscription** and then click on **Apply**.
 
 ![](./media/image2.png)
 
-4.  Run below command to clone the project solution.
+4. Run below command to clone the project solution.
 
 +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
 ![](./media/image3.png)
 
-5.  Install Python dependencies (like azureml-sdk):Run below commands
+5. Install Python dependencies (like azureml-sdk):Run below commands
 
 +++pip install azureml-sdk+++
 
 ![](./media/image4.png)
 
-6.  Run below script to create resources in Azure.
+6. Run below script to create resources in Azure.
 
 +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
@@ -92,17 +92,17 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 ![](./media/image5.png)
 
-7.  Wait for the script to run completely. It takes 4-5 minutes to
+7. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
 ![](./media/image6.png)
 
 ![](./media/image7.png)
 
-8.  Close the **Cloud shell** and click on **Resource group** tile.
+8. Close the **Cloud shell** and click on **Resource group** tile.
 
 ![](./media/image8.png)
 
-9.  Click on resource group name.
+9. Click on resource group name.
 
 ![](./media/image9.png)
 
@@ -122,13 +122,13 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 13. Select **Privileged administrator roles -> Contributor** role and
     then click **Next.**
 
-> ![](./media/image13.png)
+![](./media/image13.png)
 
 14. Select **user,group or service principal** radio button, click on
     **Select members** link. Search for your Azure subscription tenant
     ,select it and then click on **Select**.
 
-> ![](./media/image14.png)
+![](./media/image14.png)
 
 15. Click on **Review +assign**.
 
@@ -136,7 +136,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 16. Again click on **Review + assign**.
 
-> ![](./media/image16.png)
+![](./media/image16.png)
 
 17. Click on **Overview** from left navigation and then click on
     **Launch studio** button.
@@ -148,48 +148,47 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 ![](./media/image18.png)
 
-19. Click on **Compute** from left navigation menu and make sure compute
-    instances and clusters are created and running status.
+19. Click on **Compute** in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is Running.
 
 ![](./media/image19.png)
 
-20. Click on **Compute cluster**s , cluster should have created
+20. Click on **Compute clusters** , cluster should have created
     successfully.
 
 ![](./media/image20.png)
 
-### Task 2 : Assing roles to the subscription
+### Task 2 : Assign roles to the subscription
 
-1.  Switch back to **Azure portal** home page and click on **Resource group** tile.
+1. Switch back to **Azure portal** home page and click on **Resource group** tile.
 
 ![](./media/image21.png)
 
-2.  Click on your resource group name.
+2. Click on your resource group name.
 
 ![](./media/image22.png)
 
-3.  Click on **Access control(IAM)** from left navigation menu, select
+3. Click on **Access control(IAM)** from left navigation menu, select
     **Add - > Add role assignment.**
 
 ![](./media/image23.png)
 
-4.  Search for `AzureML Compute Operator` and select it. Click on
+4. Search for `AzureML Compute Operator` and select it. Click on
     **Next** .
 
 ![](./media/image24.png)
 
-5.  Select **users, group or service principal** radio button, click on
+5. Select **users, group or service principal** radio button, click on
     **select members** hyper link. Search for your **aoaitfsXXXX**
     (relace XXXX with your tenant number) id and select it. Finally,
     click on **Select** button
 
 ![](./media/image25.png)
 
-6.  Click on **Next**.
+6. Click on **Next**.
 
 ![](./media/image26.png)
 
-7.  Click on **Review + assign** now.
+7. Click on **Review + assign** now.
 
 ![](./media/image27.png)
 
@@ -232,8 +231,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 ### Task 3 : Upload resource into Azure Storage account
 
  When you create an Azure Machine Learning workspace, a Storage Account
-is automatically created and connected to your workspace. You'll
-explore how the Storage Account is connected.
+is automatically created and connected to your workspace. 
 
 1.  In Azure portal- > Resource group , click on Storage account name
 
