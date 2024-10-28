@@ -58,8 +58,8 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 ### **Task 1: Create Azure machine learning resources** 
 
-1.  Open a browser and go to `https://portal.azure.com` and sign in with
-    your Azure subscription.
+1.   In the Edge browser, navigate to Azure Portal at
+`https://portal.azure.com` and Sign In using your Azure user credentials (provided in the resources section).
 
 2.  Click on Cloud shell and select **Bash**.
 
