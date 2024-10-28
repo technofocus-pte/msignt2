@@ -78,17 +78,17 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 5.  Install Python dependencies (like azureml-sdk):Run below commands
 
-`pip install azureml-sdk`
++++pip install azureml-sdk+++
 
 ![](./media/image4.png)
 
 6.  Run below script to create resources in Azure.
 
-`cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/`
++++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
-`chmod +x setup.sh`
++++chmod +x setup.sh++=
 
-`./setup.sh`
++++./setup.sh+++
 
 ![](./media/image5.png)
 
@@ -229,7 +229,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 ![](./media/image35.png)
 
-### Task 3 : Uploaded resource into Azure Storage account
+### Task 3 : Upload resource into Azure Storage account
 
  When you create an Azure Machine Learning workspace, a Storage Account
 is automatically created and connected to your workspace. You'll
