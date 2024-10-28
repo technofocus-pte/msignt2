@@ -25,12 +25,12 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 **At the end of this lab you will know how-to:**
 
-    - Import data sets to storage account and clean the data using python SDK notebook
-    - Build a Machine learning model using Azure machine Learning
-    - Use AI-based recommendation systems for prediction
-    - Using insights from the enhanced segmentation
-    - Use Azure AI Search Services to enrich the chatbot with search
-    - use Azure AI Bot Service for customer engagement using chatbot
+- Import data sets to storage account and clean the data using python SDK notebook
+- Build a Machine learning model using Azure machine Learning
+- Use AI-based recommendation systems for prediction
+- Using insights from the enhanced segmentation
+- Use Azure AI Search Services to enrich the chatbot with search
+- use Azure AI Bot Service for customer engagement using chatbot
 
 **Tools/Technologies/Apps used :**
 
@@ -63,24 +63,24 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 2. Click on Cloud shell and select **Bash**.
 
-![](./media/image1.png)
+    ![](./media/image1.png)
 
 3. Select **No storage account** **required** radio button , select
     **your Azure subscription** and then click on **Apply**.
 
-![](./media/image2.png)
+    ![](./media/image2.png)
 
 4. Run below command to clone the project solution.
 
 +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
-![](./media/image3.png)
+    ![](./media/image3.png)
 
 5. Install Python dependencies (like azureml-sdk):Run below commands
 
 +++pip install azureml-sdk+++
 
-![](./media/image4.png)
+    ![](./media/image4.png)
 
 6. Run below script to create resources in Azure.
 
@@ -94,68 +94,68 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 7. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
-![](./media/image6.png)
+    ![](./media/image6.png)
 
-![](./media/image7.png)
+    ![](./media/image7.png)
 
 8. Close the **Cloud shell** and click on **Resource group** tile.
 
-![](./media/image8.png)
+    ![](./media/image8.png)
 
 9. Click on resource group name.
 
-![](./media/image9.png)
+    ![](./media/image9.png)
 
 10. Make sure all the resources are created.
 
-![](./media/image10.png)
+    ![](./media/image10.png)
 
 11. Click on **Azure Machine Learning workspace** name.
 
-![](./media/image11.png)
+    ![](./media/image11.png)
 
 12. Click on **Access control (IAM)** from left navigation menu, click
     on **Add -> Add role assignment.**
 
-![](./media/image12.png)
+    ![](./media/image12.png)
 
 13. Select **Privileged administrator roles -> Contributor** role and
     then click **Next.**
 
-![](./media/image13.png)
+    ![](./media/image13.png)
 
 14. Select **user,group or service principal** radio button, click on
     **Select members** link. Search for your Azure subscription tenant
     ,select it and then click on **Select**.
 
-![](./media/image14.png)
+    ![](./media/image14.png)
 
 15. Click on **Review +assign**.
 
-![](./media/image15.png)
+    ![](./media/image15.png)
 
 16. Again click on **Review + assign**.
 
-![](./media/image16.png)
+    ![](./media/image16.png)
 
 17. Click on **Overview** from left navigation and then click on
     **Launch studio** button.
 
-![](./media/image17.png)
+    ![](./media/image17.png)
 
 18. AML studio opens in new tab. Sign in with your Azure subscription
     account.
 
-![](./media/image18.png)
+    ![](./media/image18.png)
 
 19. Click on **Compute** in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is Running.
 
-![](./media/image19.png)
+    ![](./media/image19.png)
 
 20. Click on **Compute clusters** , cluster should have created
     successfully.
 
-![](./media/image20.png)
+    ![](./media/image20.png)
 
 ### Task 2 : Assign roles to the subscription
 
