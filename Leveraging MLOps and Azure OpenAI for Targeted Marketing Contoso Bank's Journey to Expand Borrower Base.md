@@ -72,7 +72,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 4.  Run below command to close the project solution.
 
-`git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git`
+``git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git``
 
 ![](./media/image3.png)
 
@@ -84,7 +84,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 6.  Run below script to create resources in Azure.
 
-`cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/`
+``cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/``
 
 `chmod +x setup.sh`
 
