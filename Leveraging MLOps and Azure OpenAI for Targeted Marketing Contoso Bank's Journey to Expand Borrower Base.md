@@ -73,22 +73,24 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
     ![](./media/image3.png)
 
+
 5. Install Python dependencies (like azureml-sdk):Run below commands +++pip install azureml-sdk+++
 
     ![](./media/image4.png)
 
-6. Run below script to create resources in Azure.
+6. Run below script to create resources in Azure. 
 
-+++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
+    +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
-+++chmod +x setup.sh+++
+    +++chmod +x setup.sh+++
 
-+++./setup.sh+++
+    +++./setup.sh+++
 
-![](./media/image5.png)
+    ![](./media/image5.png)
 
 7. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
+
     ![](./media/image6.png)
 
     ![](./media/image7.png)
