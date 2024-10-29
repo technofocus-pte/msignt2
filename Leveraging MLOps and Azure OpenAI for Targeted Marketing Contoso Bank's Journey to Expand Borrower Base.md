@@ -65,20 +65,15 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
     ![](./media/image1.png)
 
-3. Select **No storage account** **required** radio button , select
-    **your Azure subscription** and then click on **Apply**.
+3. Select **No storage account** **required** radio button , select **your Azure subscription** and then click on **Apply**.
 
     ![](./media/image2.png)
 
-4. Run below command to clone the project solution.
-
-+++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
+4. Run below command to clone the project solution. +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
     ![](./media/image3.png)
 
-5. Install Python dependencies (like azureml-sdk):Run below commands
-
-+++pip install azureml-sdk+++
+5. Install Python dependencies (like azureml-sdk):Run below commands +++pip install azureml-sdk+++
 
     ![](./media/image4.png)
 
