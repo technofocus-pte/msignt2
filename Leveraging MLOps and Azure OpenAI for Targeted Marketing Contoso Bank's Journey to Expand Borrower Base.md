@@ -56,7 +56,15 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 7.  **Python SDK**: For interacting with Azure services, building the
     model, and working with data pipelines.
 
-### **Task 1: Create Azure machine learning resources** 
+# Exercise 1 : Setting up Azure Machine Learning Workspace
+#### **Introduction:**
+In this exercise, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
+
+
+### **Task 1: Setting up Azure Machine Learning Workspace** 
+
+#### **Introduction:**
+>In this task, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The task involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies.
 
 1. In the Edge browser, navigate to Azure Portal at
 `https://portal.azure.com` and Sign In using your Azure user credentials (provided in the resources section).
@@ -69,7 +77,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
     ![](./media/image2.png)
 
-4. Run below command to clone the project solution. +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
+4. Run below command to clone the project solution.+++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
     ![](./media/image3.png)
 
@@ -145,7 +153,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
     ![](./media/image18.png)
 
-19. Click on **Compute** in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is Running.
+19. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
 
     ![](./media/image19.png)
 
@@ -153,6 +161,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
     successfully.
 
     ![](./media/image20.png)
+>#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 ### **Task 2 : Assign roles to the subscription**
 
@@ -222,12 +231,12 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
     ![](./media/image35.png)
 
-### **Task 3 : Upload resource into Azure Storage account**
+### **Task 3 : Upload Contoso Bank oan documents into Azure Storage account**
 
  When you create an Azure Machine Learning workspace, a Storage Account
-is automatically created and connected to your workspace. 
+is automatically created and connected to your workspace.Upload Contoso Bank loan documents and access them to answer customer queries in Chatapp
 
-1.  In Azure portal- > Resource group , click on Storage account name
+1.  In **Azure portal- > Resource group** , click on Storage account name
 
     ![](./media/image36.png)
 
@@ -249,10 +258,15 @@ is automatically created and connected to your workspace.
 
     ![](./media/image41.png)
 
+>#### **Summary:** By the end of this excercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform tasks. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
+
+
 ### **Task 4 : Register Datasets**
 
+ In this task, we will now register the datasets containing customer data with AML, so we can train the model based on this data. 
+
 1.  Switch back to AML studio tab ( open new tab -> Azure Portal-> Resource group -> AML resource -> Launch Azure Machine learn
-    studio), Under **Asset** , click on **Data** from left navigation menu and then click on **Data asset-> Create.**
+    studio), Under **Asset** , click on **Data** from left navigation menu and then click on **Data assets-> Create.**
 
     ![](./media/image42.png)
 
@@ -260,20 +274,20 @@ is automatically created and connected to your workspace.
 
     ![](./media/image43.png)
 
-3.  Select **From local files tile** and then click on **Next**.
+3.  On this page, notice that there are several options to choose a source for your dataset including, Azure storage, SQL databases, web files, local files and event Azure Open Datasets. We will choose the Local files as our source in this lab. Select From local files and then click **Next**
 
     ![](./media/image44.png)
 
-4.  Select Datastore type **as Azure Blob storage** and select the default blob storage( you can check in Data-\> Datastore) and click
+4.  On this page, you can see two Datastore types.You can create new datastore from this page .We are selecting Datastore type **as Azure Blob storage** for our lab and select the default blob storage( you can check in Data-\> Datastore) and click
     on **Next**.
 
     ![](./media/image45.png)
 
-5.  Click on **Upload files or folder** drop down and select **Upload files.**
+5.  On this page, you have options to upload files or folder but we choose files to upload for this lab.Click on **Upload files or folder** drop down and select **Upload files.**
 
     ![](./media/image46.png)
 
-6.  Browse to **C:\Labfiles\Data** folder and select **Dataset1** and
+6.  Browse to **C:\Labfiles\Data** folder and select **Dataset1.CSV** and
     then click on **Open**.
 
     ![](./media/image47.png)
@@ -282,7 +296,7 @@ is automatically created and connected to your workspace.
 
     ![](./media/image48.png)
 
-8.  Review the data and change If you want to then click on **Next**.
+8.  Review the dataset that was imported from the CSV you uploaded in the last step. Then click Next.
 
     ![](./media/image49.png)
 
@@ -314,7 +328,7 @@ is automatically created and connected to your workspace.
 
     - Subscription : Your Azure subscription.
 
-    - Resource group - your resource group
+    - Resource group - Select your existing resource group
 
     - Service name - `cbsb-aisearchXXXX` ( replace XXXX with unique number)
 
@@ -373,8 +387,7 @@ is automatically created and connected to your workspace.
 
     ![](./media/image95.png)
 
-6.  Click on **Keys and Endpoint** under **Resource management**. Make a
-    note of Key and endpoint to use them in next tasks.
+6.  Select Keys and Endpoint under the Resource Management in the left navigation menu.Make a note of the AZURE_SEARCH_ENDPOINT and Key 1 values as this will be used later in the lab to communicate with the service.
 
     ![](./media/image96.png)
 
@@ -399,7 +412,7 @@ is automatically created and connected to your workspace.
 
     - Name -  `cbazopenaiXXXX` (XXXX can be unique number)
 
-    - Price tier -**Standard**
+    - Price tier -**Standard S0**
 
     ![](./media/image99.png)
 
@@ -415,8 +428,8 @@ is automatically created and connected to your workspace.
 
     ![](./media/image103.png)
 
-6.  Expand Resource management from left navigation ,click on Keys and  Endpoint.Copy endpoint value and assign to AZURE_OPENAI_ENDPOINT ,
-    Copy key and assign to AZURE_OPENAI_KEY.Save both these variables in     your Notepad
+6.  Expand Resource management from left navigation ,click on **Keys and  Endpoin**t.Copy endpoint value and assign to **AZURE_OPENAI_ENDPOINT** ,
+    Copy key and assign to **AZURE_OPENAI_KEY**.Save both these variables in     your Notepad
 
     ![](./media/image104.png)
 
@@ -458,9 +471,9 @@ is automatically created and connected to your workspace.
     ![](./media/image114.png)
 
 
-### **Task 8 : Access Notebook to train a model with the Azure Machine**
+### **Task 8 : Access Notebook to train a model with the AML studio**
 
-1.  Click on **Compute -> Computer instance.** Select **Compute instance** name and then click under **Application** and select
+1.  'On AML Studio home page,click on **Compute -> Computer instance.** Select **Compute instance** name and then click under **Application** and select
     **Terminal.**
 
     ![](./media/image54.png)
@@ -534,7 +547,7 @@ is automatically created and connected to your workspace.
 
 10.  Run cell to Describe the data after transposing
 
-    ![](./media/image68.png)
+        ![](./media/image68.png)
 
 11. Run all the cells and check merged_data to check number of rows.
 
