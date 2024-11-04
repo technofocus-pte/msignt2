@@ -77,18 +77,17 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image5.png)
 
-<<<<<<< HEAD
 8. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
-=======
+
 7. Wait for the script to complete. It takes 4-5 minutes for the script to run.
->>>>>>> beb44454ea5a37d184ada58463d9b208ca8a55f3
+
 
     ![](./media/image6.png)
 
     ![](./media/image7.png)
 
-<<<<<<< HEAD
+
 9. Close the **Cloud shell** and click on **Resource group** tile.
 
     ![](./media/image8.png)
@@ -98,7 +97,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
     ![](./media/image9.png)
 
 11. Make sure all the resources are created.
-=======
+
 8. Close the **Cloud shell** and click on **Resource Group** tile.
 
     ![](./media/image8.png)
@@ -108,7 +107,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
     ![](./media/image9.png)
 
 10. Go through the list of the resources to ensure all the resources are created.
->>>>>>> beb44454ea5a37d184ada58463d9b208ca8a55f3
+
 
     ![](./media/image10.png)
 
@@ -158,12 +157,10 @@ In this exercise, we will set up the foundational components of the Azure Machin
     successfully.
 
     ![](./media/image20.png)
-<<<<<<< HEAD
+
 
 >#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
-=======
->#### **Summary:** In this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
->>>>>>> beb44454ea5a37d184ada58463d9b208ca8a55f3
+
 
 ### **Task 2 : Assign roles to the subscription**
 
