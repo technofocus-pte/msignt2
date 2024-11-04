@@ -7,8 +7,8 @@ In the previous quarter, the bank launched a marketing campaign targeting potent
 
 **Workshop Objective**
 
-As part of a POC, Contoso Bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso Bank's AI engineering team to build a sample app, which makes use of Azure AI, AML and MLOps to achieve the solution.
+Contoso Bank's marketing team would like to build a Proof of Concept (POC) as part of which they'd need to work with the Data Analytics and AI engineering teams within Contoso IT team, tp build an app that uses data-driven, AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
+In this lab, you will work as an AI app developer in Contoso Bank's AI engineering team to build a sample app, which makes use of Azure AI, AML and MLOps capabilities to achieve the solution.
 
 **Tools and Technologies used in this workshop :**
 
