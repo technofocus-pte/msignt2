@@ -37,7 +37,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 7.  **Python SDK**: For interacting with Azure services, building the
     model and working with data pipelines.
 
-# Setting up Azure Machine Learning Workspace
+# Exercise 1: Setting up Azure Machine Learning Workspace
 #### **Introduction:**
 In this exercise, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform the above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
 
