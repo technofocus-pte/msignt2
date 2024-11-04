@@ -37,8 +37,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 1.  **Azure Machine Learning (AML)**: For building, training, and
     deploying the predictive model in the banking scenario.
 
-2.  **MLOps**: For applying DevOps practices in machine learning
-    workflows, covering model training, deployment, and automated model
+2.  **MLOps**: For covering model training, deployment, and automated model
     management.
 
 3.  **Azure AI Studio**: Used to create, configure, and deploy the
@@ -64,7 +63,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 ### **Task 1: Setting up Azure Machine Learning Workspace** 
 
 #### **Introduction:**
->In this task, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The task involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies.
+>In this task, we will setup AML workspace for building, training, and deploying the predictive model in the banking scenario.
 
 1. In the Edge browser, navigate to Azure Portal at
 `https://portal.azure.com` and Sign In using your Azure user credentials (provided in the resources section).
@@ -469,7 +468,7 @@ In this task,we use python SDK to clean the data and train the model using the d
 
 ### **Task 5 : Set Up Azure AI Search service**
 
-In this task, we create Azure AI Search service to enrich the chatbot with enhanced search capabilities.
+In this task, we create Azure AI Search service for enriching the chatbot with search and query capabilities based on customer data and loan details.
 
 1.  Switch back to Azure portal and search for **Azure AI search** and select it.
 
@@ -721,7 +720,7 @@ In this task, we crearte a skillset  object in Azure AI Search that's attached t
 
 ### **Task 12 : Build and Deploy Chat app in Azure AI Studio.**
 
-In this task we  build ,configure, evaluate, and deploy a chat app for your Contoso Bank. The chat app should answer questions about your loans and services. 
+In this task we create, configure, and deploy the chatbot powered by Azure AI and integrated with the AML model.
 
 1.  Open a new tab and go to `https://ai.azure.com` and sign in with your Azure subscription account.
 
