@@ -1,31 +1,20 @@
 ### **Lab 01 - Setting up Azure Machine Learning Workspace**
 
-#### **Introduction**:Contoso Bank is undergoing a comprehensive digital transformation across all its departments to enhance their operational efficiency and customer engagement. Currently, the bank's customer base is predominantly.
-composed of liability customers (depositors), while the asset customer
-base (borrowers) is relatively smaller. The bank aims to rapidly expand
-its asset customer segment to generate additional revenue through loan
-interests.
+#### **Introduction**
+Contoso Bank is undergoing a comprehensive digital transformation across all its departments to enhance their operational efficiency and customer engagement. Currently, the bank's customer base is predominantly composed of liability customers (depositors), while the asset customer base (borrowers) is relatively smaller. The bank aims to rapidly expand its asset customer segment to generate additional revenue through loan interests.
 
-In the previous quarter, the bank launched a marketing campaign
-targeting potential borrowers, which resulted in an average conversion
-rate in the single digits. As part of its digital transformation
-strategy, the marketing department seeks to design more effective
-campaigns that leverage targeted marketing techniques. The goal is to
-significantly increase the conversion ratio to double digits while
-maintaining the same budget as the last campaign. This initiative is
-pivotal for driving growth and maximizing the bank's profitability
-through increased borrowing activity.
+In the previous quarter, the bank launched a marketing campaign targeting potential borrowers, which resulted in an average conversion rate in the single digits. As part of its digital transformation strategy, the marketing department seeks to design more effective campaigns that leverage targeted marketing techniques. The goal is to significantly increase the conversion ratio to double digits while maintaining the same budget as the last campaign. This initiative is pivotal for driving growth and maximizing the bank's profitability through increased borrowing activity.
 
 **Lab Objective**
 
-"As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution."
+As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
+In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution.
 
-**At the end of this lab you will know how-to:**
+**By the end of this lab you will know how-to:**
 
-- setup Azure Machine Learning workspace
+- Setup Azure Machine Learning workspace
 
-**Tools/Technologies/Apps used :**
+**Tools and Technologies used in this lab :**
 
 1.  **Azure Machine Learning (AML)**: For building, training, and
     deploying the predictive model in the banking scenario.
@@ -59,7 +48,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 >In this task, we will setup AML workspace for building, training, and deploying the predictive model in the banking scenario.
 
 1. In the Edge browser, navigate to Azure Portal at
-`https://portal.azure.com` and Sign In using your Azure user credentials (provided in the resources section).
+`https://portal.azure.com` and Sign In using your Azure user credentials (provided in the Resources section).
 
 2. Click on Cloud shell and select **Bash**.
 
@@ -88,22 +77,21 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image5.png)
 
-7. Wait for the script to run completely. It takes 4-5 minutes to
-    complete.
+7. Wait for the script to complete. It takes 4-5 minutes for the script to run.
 
     ![](./media/image6.png)
 
     ![](./media/image7.png)
 
-8. Close the **Cloud shell** and click on **Resource group** tile.
+8. Close the **Cloud shell** and click on **Resource Group** tile.
 
     ![](./media/image8.png)
 
-9. Click on resource group name.
+9. Click on your resource group name.
 
     ![](./media/image9.png)
 
-10. Make sure all the resources are created.
+10. Go through the list of the resources to ensure all the resources are created.
 
     ![](./media/image10.png)
 
@@ -153,11 +141,11 @@ In this exercise, we will set up the foundational components of the Azure Machin
     successfully.
 
     ![](./media/image20.png)
->#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
+>#### **Summary:** In this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 ### **Task 2 : Assign roles to the subscription**
 
-> We need to assign below mentioned roles to index , enrich the data and to create OpenAI services in the workspace.
+> We need to assign sufficient roles and permissions to your user account on the created resource group in order to be able to index and enrich the customer data, and to be able to create OpenAI services in the workspace.
 
 1. Switch back to **Azure portal** home page and click on **Resource group** tile.
 
