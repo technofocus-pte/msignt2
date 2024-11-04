@@ -1,8 +1,8 @@
 ### **Leveraging MLOps and Azure OpenAI for Targeted Marketing: Contoso Bank's Journey to Expand Borrower Base**
 
 Contoso Bank is undergoing a comprehensive digital transformation across
-all its departments to enhance its operational efficiency and customer
-engagement. Currently, the bank's customer base is predominantly
+all its departments to enhance their operational efficiency and customer
+engagement. Currently, the bank's customer base is predominantly.
 composed of liability customers (depositors), while the asset customer
 base (borrowers) is relatively smaller. The bank aims to rapidly expand
 its asset customer segment to generate additional revenue through loan
@@ -21,7 +21,7 @@ through increased borrowing activity.
 **Lab Objective**
 
 "As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, that makes use of Azure AI, AML and MLOps to achieve the solution."
+In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution."
 
 **At the end of this lab you will know how-to:**
 
@@ -54,11 +54,11 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
     training and prediction.
 
 7.  **Python SDK**: For interacting with Azure services, building the
-    model, and working with data pipelines.
+    model and working with data pipelines.
 
 # Exercise 1 : Setting up Azure Machine Learning Workspace
 #### **Introduction:**
-In this exercise, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
+In this exercise, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform the above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
 
 
 ### **Task 1: Setting up Azure Machine Learning Workspace** 
@@ -77,7 +77,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image2.png)
 
-4. Run below command to clone the project solution.+++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
+4. Run below command to clone the project solution. +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
     ![](./media/image3.png)
 
@@ -86,7 +86,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image4.png)
 
-6. Run below script to create resources in Azure. 
+6. Run below script to create resources in Azure.
 
     +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
@@ -139,7 +139,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image15.png)
 
-16. Again click on **Review + assign**.
+16. Again,click on **Review + assign**.
 
     ![](./media/image16.png)
 
@@ -164,6 +164,8 @@ In this exercise, we will set up the foundational components of the Azure Machin
 >#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 ### **Task 2 : Assign roles to the subscription**
+
+> We need to assign below mentioned roles to index , enrich the data and to create OpenAI services in the workspace.
 
 1. Switch back to **Azure portal** home page and click on **Resource group** tile.
 
@@ -195,12 +197,12 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image27.png)
 
-8.  After role assignment successful, click on **Add -> Add role
+8.  After role assignments are successful, click on **Add -> Add role
     assignment**.
 
     ![](./media/image28.png)
 
-9.  Search for below roles and assign them. Repeat above steps for below
+9.  Search for the below roles and assign them. Repeat above steps for below
     roles as well
 
     `Search Index Data Reader`
@@ -231,7 +233,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image35.png)
 
-### **Task 3 : Upload Contoso Bank oan documents into Azure Storage account**
+### **Task 3 : Upload Contoso Bank loan documents into Azure Storage account**
 
  When you create an Azure Machine Learning workspace, a Storage Account
 is automatically created and connected to your workspace.Upload Contoso Bank loan documents and access them to answer customer queries in Chatapp
@@ -258,7 +260,7 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image41.png)
 
->#### **Summary:** By the end of this excercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform tasks. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
+>#### **Summary:** By the end of this exercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform tasks. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 # Exercise 2: Building and Registering Predictive Models
 >#### **Introduction:** In this exercise, we will focus on registering datasets ,building and training machine learning models that predict borrower behavior. Using Azure Machine Learning, we will develop models that analyze historical customer data to forecast potential borrowers’ likelihood of loan conversion. After building the models, we will register them within the Azure ML workspace for further deployment and monitoring. This task emphasizes the importance of creating accurate and scalable models that drive personalized marketing.
@@ -312,11 +314,13 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image52.png)
 
-11. Repeat above steps and register Dataset2.CSV with the name `Dataset2` also.
+11. Repeat the above steps and register Dataset2.CSV with the name `Dataset2` also.
 
     ![](./media/image53.png)
 
 ### **Task 8 : Access Notebook to train a model with the AML studio**
+
+In this task,we learn how to access the python SDK notebook from AML
 
 1.  'On AML Studio home page,click on **Compute -> Computer instance.** Select **Compute instance** name and then click under **Application** and select
     **Terminal.**
@@ -335,24 +339,26 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image56.png)
 
-13. Run the following command to clone a Git repository containing a notebook, data, and other files to your workspace:
+4. Run the following command to clone a Git repository containing a notebook, data, and other files to your workspace:
 
     `git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git`
 
     ![](./media/image57.png)
 
-14. When the command has completed, in the **Files** pane, click **↻** to refresh the view and verify that a
+5. When the command has completed, in the **Files** pane, click **↻** to refresh the view and verify that a
     new **Users/*your-user-name*/MLops…** folder has been created.
 
     ![](./media/image58.png)
 
-15. Stay back in the same page to continue.
+6. Stay back in the same page to continue.
 
 # Exercise 3: Setting up MLOps Pipelines for Automated Deployment
 
->**Introduction:** :This task focuses on implementing MLOps pipelines that automate the end-to-end process of model deployment. We will create and configure pipelines within Azure DevOps, enabling the automation of model training, testing, and deployment. This will allow Contoso Bank to streamline the process of updating machine learning models, ensuring that marketing models are always using the most up-to-date data and techniques.
+>**Introduction:** :This exercise focuses on implementing MLOps pipelines that automate the end-to-end process of model deployment. We will create and configure pipelines within Azure DevOps, enabling the automation of model training, testing, and deployment. This will allow Contoso Bank to streamline the process of updating machine learning models, ensuring that marketing models are always using the most up-to-date data and techniques.
 
 ### **Task 9 : Run the notebook to Work with Data**
+
+In this task,we use python SDK to clean the data and train the model using the data
 
 1.  Expand **models** folder and select the **ContosoBankAMLmodel.ipynb** notebook.
 
@@ -455,13 +461,15 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image84.png)
 
->**Summary:**By implementing the MLOps pipelines, we have automated the process of model deployment and lifecycle management. This ensures that Contoso Bank’s predictive models are continuously updated and deployed with minimal manual intervention. The automation enables faster iteration cycles and supports the bank’s dynamic marketing needs.
+>**Summary:** By implementing the MLOps pipelines, we have automated the process of model deployment and lifecycle management. This ensures that Contoso Bank’s predictive models are continuously updated and deployed with minimal manual intervention. The automation enables faster iteration cycles and supports the bank’s dynamic marketing needs.
 
 # Exercise 4: Integrating Azure OpenAI service and AI service for Customer Engagement
 
 >**Introduction:** :In this task, we will integrate the Azure OpenAI chatbot into Contoso Bank’s customer engagement platforms. The chatbot will serve as an interactive tool for customers, helping them explore loan products, get personalized loan recommendations, and receive real-time assistance. We will use Azure OpenAI’s natural language processing capabilities to ensure the chatbot delivers a smooth, human-like experience while collecting valuable customer data for further analysis.
 
 ### **Task 5 : Set Up Azure AI Search service**
+
+In this task, we create Azure AI Search service to enrich the chatbot with enhanced search capabilities.
 
 1.  Switch back to Azure portal and search for **Azure AI search** and select it.
 
@@ -502,6 +510,8 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
 ### **Task 6 : Create Azure AI multi-service resource**
 
+In this task, We create AI multi-service for NLP to enrich data and interact with customer through chatapp
+
 1.  Create an Azure AI multi-service resource in the **same region as your search service region.**
 
 2.  Open a new tab in a browser and go to  `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`
@@ -540,6 +550,8 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
 ### **Task 7 : Create Azure OpenAI resource**
 
+In this task, we create Azure OpenAI resource to deploy OpenAI models for embeddings and completions to use them in Chatapp
+
 1.  Open a new tab and search for **Azure OpenAI** service and select
     it.
 
@@ -575,7 +587,7 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image103.png)
 
-6.  Expand Resource management from left navigation ,click on **Keys and  Endpoin**t.Copy endpoint value and assign to **AZURE_OPENAI_ENDPOINT** ,
+6.  Expand Resource management from left navigation ,click on **Keys and  Endpoint**.Copy endpoint value and assign to **AZURE_OPENAI_ENDPOINT** ,
     Copy key and assign to **AZURE_OPENAI_KEY**.Save both these variables in     your Notepad
 
     ![](./media/image104.png)
@@ -619,6 +631,8 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
 ### **Task 10 : Add a data source to Azure AI search service**
 
+In this task, we add data source of all resource to enrich data.
+
 1.  Switch back to Azure portal -> Resource group- > Azure AI search service.
 
     ![](./media/image115.png)
@@ -644,6 +658,8 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
     ![](./media/image118.png)
 
 ### **Task 11 : Create skillsets in Azure AI search**
+
+In this task, we crearte a skillset  object in Azure AI Search that's attached to an indexer. It contains one or more skills that call built-in AI 
 
 1.  On Overview page, click on **Import data** tab.
 
@@ -704,6 +720,8 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
     ![](./media/image130.png)
 
 ### **Task 12 : Build and Deploy Chat app in Azure AI Studio.**
+
+In this task we  build ,configure, evaluate, and deploy a chat app for your Contoso Bank. The chat app should answer questions about your loans and services. 
 
 1.  Open a new tab and go to `https://ai.azure.com` and sign in with your Azure subscription account.
 
@@ -805,10 +823,12 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
 # Exercise 5: Leveraging Azure AI Search for Personalized Recommendations
 
->**Introduction:**In this task, we will leverage Azure AI Search to power personalized recommendations for customers. Azure AI Search allows us to index and analyze customer data, enabling us to recommend relevant loan products based on individual customer preferences and behaviors. We will integrate this search functionality with Contoso Bank’s existing systems to ensure seamless data flow and accurate recommendations.
+>**Introduction:** In this task, we will leverage Azure AI Search to power personalized recommendations for customers. Azure AI Search allows us to index and analyze customer data, enabling us to recommend relevant loan products based on individual customer preferences and behaviors. We will integrate this search functionality with Contoso Bank’s existing systems to ensure seamless data flow and accurate recommendations.
 
 
 ### **Task 13 : Access and Explore the Chatapp.**
+
+In this task, we explore the chatapp
 
 1.  Go back Azure Portal Home page. Search for `App Services and select it from drop down as shown in the below image.
 
@@ -823,7 +843,7 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image152.png)
 
-4.  Get the key from your Setup Azure AI Search service task ( Resoruce group- > Azure AI search service- > Settings- > Keys -> Key 1),
+4.  Get the key from your Setup Azure AI Search service task ( Resource group- > Azure AI search service- > Settings- > Keys -> Key 1),
     enter the key in Value field and then click on Apply.
 
     ![](./media/image153.png)
