@@ -1,4 +1,4 @@
-### **Leveraging MLOps and Azure OpenAI for Targeted Marketing: Contoso Bank's Journey to Expand Borrower Base**
+### **Lab 06 - Continuous Monitoring and Model Management**
 
 Contoso Bank is undergoing a comprehensive digital transformation across
 all its departments to enhance their operational efficiency and customer
@@ -25,12 +25,8 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 **At the end of this lab you will know how-to:**
 
-- Import data sets to storage account and clean the data using python SDK notebook
-- Build a Machine learning model using Azure machine Learning
-- Use AI-based recommendation systems for prediction
-- Using insights from the enhanced segmentation
-- Use Azure AI Search Services to enrich the chatbot with search
-- use Azure AI Bot Service for customer engagement using chatbot
+
+- Exploring  Azure AI Bot Service for customer engagement using chatbot
 
 **Tools/Technologies/Apps used :**
 

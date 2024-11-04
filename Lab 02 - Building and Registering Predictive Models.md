@@ -1,12 +1,13 @@
-### **Setting up Azure Machine Learning Workspace**
+### **Building and Registering Predictive Models**
 
 **At the end of this lab you will know how-to:**
 
+- Registering datasets for model training 
 - Build and register a Machine learning model using Azure machine Learning Studio
 
 
 #### **Introduction:**
-In this lab, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will be the environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform the above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
+In this exercise, we will focus on registering datasets ,building and training machine learning models that predict borrower behavior. Using Azure Machine Learning, we will develop models that analyze historical customer data to forecast potential borrowers’ likelihood of loan conversion. After building the models, we will register them within the Azure ML workspace for further deployment and monitoring. This task emphasizes the importance of creating accurate and scalable models that drive personalized marketing.
 
 
 ### **Task 1 : Register Datasets**
@@ -96,3 +97,4 @@ In this task,we learn how to access the python SDK notebook from AML
 
 6. Stay back in the same page to continue.
 
+>#### **Summary:** We have successfully registered data sets, built and registered predictive models that analyze borrower behavior. These models are now stored in the Azure Machine Learning registry, ready for further deployment and continuous monitoring. With this task completed, Contoso Bank can begin using these models to drive more targeted marketing efforts and improve borrower conversion rates.

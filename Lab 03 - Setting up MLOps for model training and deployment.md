@@ -1,4 +1,4 @@
-### **Leveraging MLOps and Azure OpenAI for Targeted Marketing: Contoso Bank's Journey to Expand Borrower Base**
+### **Setting up MLOps for model training and deployment using Python SDK**
 
 
 **At the end of this lab you will know how-to:**
@@ -6,13 +6,9 @@
 - train model and deploy in AML using Python SDK
 
 
+# Setting up MLOps for model training and deployment using Python SDK
 
-
-
-# Setting up MLOps for model training and  deployment
-
->**Introduction:** :This exercise focuses on implementing MLOps pipelines that automate the end-to-end process of model deployment. We will create and configure pipelines within Azure DevOps, enabling the automation of model training, testing, and deployment. This will allow Contoso Bank to streamline the process of updating machine learning models, ensuring that marketing models are always using the most up-to-date data and techniques.
-
+>**Introduction:** :In this exercise, we focus on implementing a streamlined approach to model deployment by utilizing the Python SDK notebook for model training and deployment, rather than automated MLOps pipelines. This hands-on approach allows us to register datasets, build, and deploy predictive models directly through the Azure Machine Learning environment without requiring Azure DevOps pipelines. This setup will enable Contoso Bank to initiate targeted marketing efforts using up-to-date borrower behavior models, which can be further updated manually as needed.
 ### **Task 1 : Run the notebook to Work with Data**
 
 In this task,we use python SDK to clean the data and train the model using the data
@@ -118,5 +114,4 @@ In this task,we use python SDK to clean the data and train the model using the d
 
     ![](./media/image84.png)
 
->**Summary:** By implementing the MLOps pipelines, we have automated the process of model deployment and lifecycle management. This ensures that Contoso Bank’s predictive models are continuously updated and deployed with minimal manual intervention. The automation enables faster iteration cycles and supports the bank’s dynamic marketing needs.
-
+>**Summary:** Using the Python SDK notebook, we have successfully trained and deployed predictive models for analyzing borrower behavior without relying on automated pipelines or DevOps. This approach allows Contoso Bank to manually update and deploy models as needed, enabling targeted marketing efforts with up-to-date insights into borrower behavior.
