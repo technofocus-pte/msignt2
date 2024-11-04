@@ -1,4 +1,4 @@
-### **Building and Registering Predictive Models**
+### **Lab 02 - Building and Registering Predictive Models**
 
 **At the end of this lab you will know how-to:**
 

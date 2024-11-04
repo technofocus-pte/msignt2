@@ -1,4 +1,4 @@
-### **Integrating Azure OpenAI service and AI service for Customer Engagement**
+### **Lab 04 - Integrating Azure OpenAI service and AI service for Customer Engagement**
 
 
 **Lab Objective**

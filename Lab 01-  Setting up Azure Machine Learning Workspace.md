@@ -83,76 +83,78 @@ In this exercise, we will set up the foundational components of the Azure Machin
     +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
     +++chmod +x setup.sh+++
+7. Run below setup script . This script will register the Machine Learning resource providers,create resource group, Azure Machine Learning workspace ,compute instance and compute cluster in AML workspace.
 
     +++./setup.sh+++
 
     ![](./media/image5.png)
 
-7. Wait for the script to run completely. It takes 4-5 minutes to
+8. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
 
     ![](./media/image6.png)
 
     ![](./media/image7.png)
 
-8. Close the **Cloud shell** and click on **Resource group** tile.
+9. Close the **Cloud shell** and click on **Resource group** tile.
 
     ![](./media/image8.png)
 
-9. Click on resource group name.
+10. Click on resource group name.
 
     ![](./media/image9.png)
 
-10. Make sure all the resources are created.
+11. Make sure all the resources are created.
 
     ![](./media/image10.png)
 
-11. Click on **Azure Machine Learning workspace** name.
+12. Click on **Azure Machine Learning workspace** name.
 
     ![](./media/image11.png)
 
-12. Click on **Access control (IAM)** from left navigation menu, click
+13. Click on **Access control (IAM)** from left navigation menu, click
     on **Add -> Add role assignment.**
 
     ![](./media/image12.png)
 
-13. Select **Privileged administrator roles -> Contributor** role and
+14. Select **Privileged administrator roles -> Contributor** role and
     then click **Next.**
 
     ![](./media/image13.png)
 
-14. Select **user,group or service principal** radio button, click on
+15. Select **user,group or service principal** radio button, click on
     **Select members** link. Search for your Azure subscription tenant
     ,select it and then click on **Select**.
 
     ![](./media/image14.png)
 
-15. Click on **Review +assign**.
+16. Click on **Review +assign**.
 
     ![](./media/image15.png)
 
-16. Again,click on **Review + assign**.
+17. Again,click on **Review + assign**.
 
     ![](./media/image16.png)
 
-17. Click on **Overview** from left navigation and then click on
+18. Click on **Overview** from left navigation and then click on
     **Launch studio** button.
 
     ![](./media/image17.png)
 
-18. AML studio opens in new tab. Sign in with your Azure subscription
+19. AML studio opens in new tab. Sign in with your Azure subscription
     account.
 
     ![](./media/image18.png)
 
-19. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
+20. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
 
     ![](./media/image19.png)
 
-20. Click on **Compute clusters** , cluster should have created
+21. Click on **Compute clusters** , cluster should have created
     successfully.
 
     ![](./media/image20.png)
+
 >#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 ### **Task 2 : Assign roles to the subscription**

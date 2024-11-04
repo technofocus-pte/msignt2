@@ -1,4 +1,4 @@
-### **Setting up MLOps for model training and deployment using Python SDK**
+### **Lab 03 - Setting up MLOps for model training and deployment using Python SDK**
 
 
 **At the end of this lab you will know how-to:**

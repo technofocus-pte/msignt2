@@ -1,4 +1,4 @@
-### **Leveraging Azure AI Search for Personalized Recommendations**
+### **Lab 05 -Leveraging Azure AI Search for Personalized Recommendations**
 
 Contoso Bank is undergoing a comprehensive digital transformation across
 all its departments to enhance their operational efficiency and customer
