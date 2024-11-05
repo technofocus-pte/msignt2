@@ -150,7 +150,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 >#### **Summary:** In this this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 
-### **Task 2 : Assign roles to the subscription**
+### **Task 2 : Configure Role Assignments**
 
 > We need to configure appropriate Role Assignments on the resource group for your user Azure account in order to be able to index and enrich the customer data, and to be able to create OpenAI services in the AML workspace.
 
@@ -171,8 +171,8 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image24.png)
 
-5. Select **users, group or service principal** radio button, click on **select members** hyper link. Search for your **aoaitfsXXXX**
-    (relace XXXX with your tenant number) id and select it. Finally, click on **Select** button
+5. Select **Users, group or service principal** radio button, click on **Select members** hyper link. Search for your **aoaitfsXXXX**
+    (search for your logged in AOAI user credentials username as provided in the Resources section of the Lab environment) select it. Finally, click on **Select** button
 
     ![](./media/image25.png)
 
@@ -189,8 +189,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image28.png)
 
-9.  Search for the below roles and assign them. Repeat above steps for below
-    roles as well
+9.  Repeat Steps 3-8 above, to also add the following role assignments for your logged in user account:
 
     `Search Index Data Reader`
 
@@ -212,7 +211,7 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image33.png)
 
-21. Click on **Role assignments.**
+21. In the IAM details pane, Click on **Role assignments** (next to **Check Access**).
 
     ![](./media/image34.png)
 
