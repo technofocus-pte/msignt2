@@ -57,27 +57,27 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image2.png)
 
-4. Run below command to clone the project solution. +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
+4. We will clone the repo containing the files required to deploy the solution.
+   +++git clone https://github.com/technofocus-pte/MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration.git+++
 
     ![](./media/image3.png)
 
 
-5. Install Python dependencies (like azureml-sdk):Run below commands +++pip install azureml-sdk+++
+6. We will also install Python dependencies (e.g. azureml-sdk). Run +++pip install azureml-sdk+++ to install the dependencies.
 
     ![](./media/image4.png)
 
-6. Run below script to create resources in Azure.
+7. Lets now run this script to create thre required resources in an Azure resource group within the assigned subscription. This script will register the Machine Learning resource providers,create resource group, Azure Machine Learning workspace ,compute instance and compute cluster in AML workspace.
 
     +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
     +++chmod +x setup.sh+++
-7. Run below setup script . This script will register the Machine Learning resource providers,create resource group, Azure Machine Learning workspace ,compute instance and compute cluster in AML workspace.
-
+8. Run below setup script now by executing this command.
     +++./setup.sh+++
 
     ![](./media/image5.png)
 
-8. Wait for the script to run completely. It takes 4-5 minutes to
+9. Wait for the script to run completely. It takes 4-5 minutes to
     complete.
 
 7. Wait for the script to complete. It takes 4-5 minutes for the script to run.
