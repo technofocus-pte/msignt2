@@ -63,9 +63,9 @@ In this lab, we will focus on registering datasets, building and training machin
 
 ### **Task 2 : Access Notebook to train a model with the AML studio**
 
-In this task,we learn how to access the python SDK notebook from AML
+In this task,we will access the python SDK notebook from AML
 
-1.  'On AML Studio home page,click on **Compute -> Computer instance.** Select **Compute instance** name and then click under **Application** and select
+1.  'On AML Studio home page,click on **Compute -> Computer instances**. Select the running Compute instance name and then click under **Application** and select
     **Terminal.**
 
     ![](./media/image54.png)
@@ -88,11 +88,11 @@ In this task,we learn how to access the python SDK notebook from AML
 
     ![](./media/image57.png)
 
-5. When the command has completed, in the **Files** pane, click **↻** to refresh the view and verify that a
+5. When the command has completed, in the **Files** panel (on left hand side), click **↻** to refresh the view and verify that a
     new **Users/*your-user-name*/MLops…** folder has been created.
 
     ![](./media/image58.png)
 
 6. Stay in the same page to continue with the next lab.
 
->#### **Summary:** We have successfully registered data sets, built and registered predictive models that analyze borrower behavior. These models are now stored in the Azure Machine Learning registry, ready for further deployment and continuous monitoring. With this task completed, Contoso Bank can begin using these models to drive more targeted marketing efforts and improve borrower conversion rates.
+>#### **Summary:** In this lab we registered data sets, that will be used to build and register predictive models that analyze borrower behavior.
