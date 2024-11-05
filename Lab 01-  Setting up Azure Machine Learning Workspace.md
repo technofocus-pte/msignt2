@@ -249,7 +249,13 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image38.png)
 
-4.  Click on **Upload -> Browse for files** . select the files from **C:\Labfiles\resources** folder and then click on **Open**.
+4.  Click on **Upload -> Browse for files** . select the below files from **C:\Labfiles\Resources** folder and then click on **Open**.
+
+    - Contoso Bank Home loan FAQS.pdf
+    - Contoso Bank Home loan Guide.pdf
+    - Contoso Personal Loan FAQs.pdf
+    - Contoso Personal Loan guide.pdf
+    - enriched_data.csv
 
     ![](./media/image39.png)
 

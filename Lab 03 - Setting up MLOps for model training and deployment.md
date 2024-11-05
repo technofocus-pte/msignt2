@@ -9,6 +9,7 @@
 # Setting up MLOps for model training and deployment using Python SDK
 
 >**Introduction:** :In this exercise, we focus on implementing a streamlined approach to model deployment by utilizing the Python SDK notebook for model training and deployment, rather than automated MLOps pipelines. This hands-on approach allows us to register datasets, build, and deploy predictive models directly through the Azure Machine Learning environment without requiring Azure DevOps pipelines. This setup will enable Contoso Bank to initiate targeted marketing efforts using up-to-date borrower behavior models, which can be further updated manually as needed.
+
 ### **Task 1 : Run the notebook to Work with Data**
 
 In this task,we use python SDK to clean the data and train the model using the data

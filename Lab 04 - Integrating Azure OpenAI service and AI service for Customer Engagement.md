@@ -21,7 +21,7 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 
 In this task, we create Azure AI Search service for enriching the chatbot with search and query capabilities based on customer data and loan details.
 
-1.  Switch back to Azure portal and search for **Azure AI search** and select it.
+1.  Switch back to Azure portal and search for `Azure AI search` and select it.
 
     ![](./media/image85.png)
 
@@ -49,12 +49,11 @@ In this task, we create Azure AI Search service for enriching the chatbot with s
 
     ![](./media/image89.png)
 
-6.  Open a Notepad and make a note of URI value as  **AZURE_SEARCH_ENDPOINT** ,we use it to communicate to the service.
+6.  Open a Notepad and make a note of URL value as  **AZURE_SEARCH_ENDPOINT** ,we use it to communicate to the service.
 
     ![](./media/image90.png)
 
-7.  Navigate to the **Keys** section and grab the API Key and save it as AZURE_SEARCH_KEY in your notepad. You will need this to communicate
-    with the service.
+7.  Navigate to the **Keys** section and grab the API Key and save it as **AZURE_SEARCH_KEY** in your notepad. You will need this to communicate     with the service.
 
     ![](./media/image91.png)
 
@@ -77,7 +76,7 @@ In this task, We create AI multi-service for NLP to enrich data and interact wit
 
     - Name : `cbsb-aimultiserviceXXXX` (XXXX can be unique number)
 
-    - Price tier : Standard S0
+    - Price tier : **Standard S0**
 
     - Select **By checking this box I acknowledge that I have read and understood all the terms below** check box.
 
@@ -94,7 +93,7 @@ In this task, We create AI multi-service for NLP to enrich data and interact wit
 
     ![](./media/image95.png)
 
-6.  Select Keys and Endpoint under the Resource Management in the left navigation menu.Make a note of the AZURE_SEARCH_ENDPOINT and Key 1 values as this will be used later in the lab to communicate with the service.
+6.  Select **Keys and Endpoint** under the **Resource Management** in the left navigation menu.Make a note of the AZURE_MULTISERVICE_ENDPOINT and Key 1 values as these will be used later in the lab to communicate with this service.
 
     ![](./media/image96.png)
 
@@ -102,7 +101,7 @@ In this task, We create AI multi-service for NLP to enrich data and interact wit
 
 In this task, we create Azure OpenAI resource to deploy OpenAI models for embeddings and completions to use them in Chatapp
 
-1.  Open a new tab and search for **Azure OpenAI** service and select
+1.  Open a new tab and search for `Azure OpenAI` service and select
     it.
 
     ![](./media/image97.png)
@@ -142,11 +141,10 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
     ![](./media/image104.png)
 
-7.  Click on **Overview**, right click on **Go to Azure OpenAI Studio** and select **Open link in new tab**.
+7.  Click on **Overview**, click on **Go to Azure OpenAI Studio** and Azure OpenAI studio open in new tab.
+  
 
-    ![](./media/image105.png)
-
-8.  Azure OpenAI opens in new tab. Sign in if required. Close pop -ups
+8.  Azure OpenAI opens in new tab. Sign in if required. Close the pop -ups
 
     ![](./media/image106.png)
 
@@ -154,7 +152,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
     ![](./media/image107.png)
 
-10. Search for `gpt-35-turbo-16k` and select it and then click on **Confirm**
+10. Search for `gpt-35-turbo-16k` and select it and then click on **Confirm**.GPT-3.5 models can understand and generate natural language or code. The most capable and cost effective model in the GPT-3.5 family is GPT-3.5 Turbo, which has been optimized for chat and works well for traditional completions tasks as well.
 
     ![](./media/image108.png)
 
@@ -167,7 +165,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
     ![](./media/image110.png)
 
-13. Repeat above steps and deploy- `text-embedding-ada-002`
+13. Repeat above steps and deploy- `text-embedding-ada-002` (text-embedding-ada-002 outperforms all the earlier embedding models on text search, code search, and sentence similarity tasks and gets comparable performance on text classification. Embeddings are numerical representations of concepts converted to number sequences, which make it easy for computers to understand the relationships between those concepts.)
 
     ![](./media/image111.png)
 
@@ -183,7 +181,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
 In this task, we add data source of all resource to enrich data.
 
-1.  Switch back to Azure portal -> Resource group- > Azure AI search service.
+1.  Switch back to **Azure portal -> Resource group- > Azure AI search service.**
 
     ![](./media/image115.png)
 
@@ -201,7 +199,7 @@ In this task, we add data source of all resource to enrich data.
 
     - Storage account- your Azure storage account
 
-    - Blob container -  `azureml-blob-XXXX` (your default blob container where raw data is uploaded.)
+    - Blob container -  `azureml-blobstore-XXXX` (your default blob container where raw data is uploaded.)
 
     ![](./media/image117.png)
 
