@@ -179,7 +179,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
 ### **Task 4 : Add a data source to Azure AI search service**
 
-In this task, we add data source of all resource to enrich data.
+In this task, we add data sources of all resources to enrich data.
 
 1.  Switch back to **Azure portal -> Resource group- > Azure AI search service.**
 
@@ -189,13 +189,13 @@ In this task, we add data source of all resource to enrich data.
 
     ![](./media/image116.png)
 
-3.  Select below values and then click on **Create.**
+3.  Select the below values and then click on **Create.**
 
-    - Data source : Azure blob Storage
+    - Data source: Azure blob Storage
 
-    - Name : unique name (eg : `enrichdatasource`)
+    - Name: unique name (eg: `enrichdatasource`)
 
-    - Subscription : your Azure subscription
+    - Subscription: your Azure subscription
 
     - Storage account- your Azure storage account
 
@@ -205,11 +205,11 @@ In this task, we add data source of all resource to enrich data.
 
     ![](./media/image118.png)
 
-### **Task 5 : Create skillsets in Azure AI search**
+### **Task 5: Create skillsets in Azure AI search**
 
-In this task, we crearte a skillset  object in Azure AI Search that's attached to an indexer. It contains one or more skills that call built-in AI 
+In this task, we create a skillset  object in Azure AI Search that's attached to an indexer. It contains one or more skills that are called built-in AI 
 
-1.  On Overview page, click on **Import data** tab.
+1.  On the Overview page, click on **Import data** tab.
 
     ![](./media/image119.png)
 
@@ -218,8 +218,8 @@ In this task, we crearte a skillset  object in Azure AI Search that's attached t
 
     ![](./media/image120.png)
 
-3.  Expand **Attach AI Services** and select the AI multi service
-    created in previous task.
+3.  Expand **Attach AI Services** and select the AI multi-service
+    created in the previous task.
 
     ![](./media/image121.png)
 
@@ -236,15 +236,15 @@ In this task, we crearte a skillset  object in Azure AI Search that's attached t
 
     ![](./media/image124.png)
 
-7.  Add below fields and then click **Next : Create an indexer**
+7.  Add the below fields and then click **Next: Create an indexer**
 
-    - Field name -  `customer_name` , Type - Edm.String ,Skills -All
+    - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
-    - Field name -  `CustomerSince` , Type - Edm.Int32 ,Skills -All
+    - Field name -  `CustomerSince` , Type - Edm.Int32 , Skills -All
 
-    - Field name -  `campaign_result` , Type - Edm.String ,Skills -All
+    - Field name -  `campaign_result` , Type - Edm.String , Skills -All
 
-    - Field name -  `age` , Type - Edm.String ,Skills -All
+    - Field name -  `age` , Type - Edm.Int32 , Skills -All
 
 
     ![](./media/image125.png)
@@ -255,7 +255,7 @@ In this task, we crearte a skillset  object in Azure AI Search that's attached t
 
     ![](./media/image127.png)
 
-6.  Click on **Indexer** under **Search management**, you should see new indexer with documents
+6.  Click on **Indexers** under **Search management**, you should see new indexer with succeeded documents count.
 
     ![](./media/image128.png)
 
@@ -263,15 +263,12 @@ In this task, we crearte a skillset  object in Azure AI Search that's attached t
 
     ![](./media/image129.png)
 
-8.  Search with High value customers, you should search results.
 
-    ![](./media/image130.png)
+### **Task 6: Build and Deploy Chat app in Azure AI Studio.**
 
-### **Task 6 : Build and Deploy Chat app in Azure AI Studio.**
+In this task, we create, configure, and deploy the chatbot powered by Azure AI and integrated with the AML model.
 
-In this task we create, configure, and deploy the chatbot powered by Azure AI and integrated with the AML model.
-
-1.  Open a new tab and go to `https://ai.azure.com` and sign in with your Azure subscription account.
+1.  Open a new tab, go to `https://ai.azure.com` and sign in with your Azure subscription account.
 
     ![](./media/image131.png)
 
@@ -279,24 +276,24 @@ In this task we create, configure, and deploy the chatbot powered by Azure AI an
 
     ![](./media/image132.png)
 
-3.  Enter the unique project name(`cbsbaoai-proj`) and then click on Create a new hub link on the Hub drop down link as shown in below
+3.  Enter the unique project name(`cbsbaoai-proj`) and then click on Create a new hub link on the Hub drop down link as shown below
     image.
 
     ![](./media/image133.png)
 
-4.  Enter below values and then click on **Next**
+4.  Enter the below values and then click on **Next**
 
-    - Hub name : `cbcbaoaihub`
+    - Hub name: `cbcbaoaihub`
 
-    - Subscription : Your Azure subscription
+    - Subscription: Your Azure subscription
 
     - Resource group - your existing resource group
 
     - Region -same region as your Azure Open AI region
 
-    - Connect Azure AI Services or Azure OpenAI : Select your Azure OpenAI service
+    - Connect Azure AI Services or Azure OpenAI: Select your Azure OpenAI service
 
-    - Connect Azure AI Search : Select your Azure AI Search
+    - Connect Azure AI Search: Select your Azure AI Search
 
     ![](./media/image134.png)
 
@@ -306,7 +303,7 @@ In this task we create, configure, and deploy the chatbot powered by Azure AI an
 
     ![](./media/image136.png)
 
-6.  From left navigation menu, click on **Chat** under **Playground** .In Setup ,select **Add your data** and then click on **Add a new
+6.  click on **Chat** from the left navigation menu under **Playground**.In Setup, select **Add your data** and then click on **Add a new
     data source**.
 
     ![](./media/image137.png)
@@ -329,7 +326,7 @@ In this task we create, configure, and deploy the chatbot powered by Azure AI an
 
     ![](./media/image142.png)
 
-11. Enter below prompt in Type here query text bod and press send button.
+11. Enter the below prompt in the Type here query text body and press the send button.
 
     `Details of Customer ID- 3`
 
@@ -337,7 +334,7 @@ In this task we create, configure, and deploy the chatbot powered by Azure AI an
 
 12. Enter below prompt and press send
 
-    `List high value customers`
+    `List high-value customers`
 
     ![](./media/image144.png)
 
@@ -347,19 +344,19 @@ In this task we create, configure, and deploy the chatbot powered by Azure AI an
 
     ![](./media/image146.png)
 
-14. Enter below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
+14. Enter the below details and then click on **Deploy**. Deployment takes 5-10 min to complete.
 
     - Select **Create a new web app** radio button
 
-    - Name : should be unique name (eg `mlappchatappXXXX` - XXXX can be unique number)
+    - Name: should be a unique name (eg `mlappchatappXXXX` - XXXX can be a unique number)
 
-    - Subscription : Your Azure subscription
+    - Subscription: Your Azure subscription
 
     - Resource group - your resource existing resource group
 
-    - Location - West US / East US/East US 2 ( usually east us has high demand and deployment may fail). You can use the same location as the hub
+    - Location - West US / East US/East US 2 ( usually East US has high demand and deployment may fail). You can use the same location as the hub
 
-    - Pricing plan : Standard (S1) /S2
+    - Pricing plan: Standard (S1) /S2
 
     ![](./media/image147.png)
 
