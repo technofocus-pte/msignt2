@@ -39,7 +39,7 @@ In this lab, you will work on behalf of Contoso Bank's AI engineering team to bu
 
 In this task, we explore the chat-app
 
-1.  Go back Azure Portal Home page. Search for `App Services' and select it from the drop-down as shown in the below image.
+1.  Go back Azure Portal Home page. Search for `App Services` and select it from the drop-down as shown in the below image.
 
     ![](./media/image150.png)
 
