@@ -95,10 +95,10 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
 11. Explore the details pane to ensure all the resources including an AML workspace, a storage account, a Key vault and a Log Analaytics workspace are created successfully.
 
-13. Click on **Azure Machine Learning workspace** name. Click on Launch Studio button. The AML Studio is launched in a new browser tab.
+13. Click on **Azure Machine Learning workspace** name. Click on **Launch Studio** button. The AML Studio is launched in a new browser tab.
 14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
-15. Click on Compute (in the Manage section) from the left navigation menu, to verify that a Compute instance is already Running.
-16. Now click on Compute clusters from the top menu, to verify that a compute cluster was successfully deployed.
+15. Click on **Compute** (in the **Manage** section) from the left navigation menu, to verify that a Compute instance is already **Running**.
+16. Now click on **Compute clusters** from the top menu (next to **Compute instances**), to verify that a compute cluster was successfully deployed.
 
 ### To be removed ##
     ![](./media/image11.png)
