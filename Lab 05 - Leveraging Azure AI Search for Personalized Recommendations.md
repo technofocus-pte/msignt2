@@ -20,13 +20,13 @@ through increased borrowing activity.
 
 **Lab Objective**
 
-"As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution."
+"As part of a POC, Contoso Bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
+In this lab, you will work on behalf of Contoso Bank's AI engineering team to build this app, which makes use of Azure AI, AML, and MLOps to achieve the solution."
 
 **At the end of this lab you will know how-to:**
 
 - Use Azure AI Search Services to enrich the chatbot with search
-- use Azure AI Bot Service for customer engagement using chatbot
+- use Azure AI Bot Service for customer engagement using a chatbot
 
 
 
@@ -35,29 +35,29 @@ In this lab, you will work on behalf of Contoso bank's AI engineering team to bu
 >**Introduction:** In this task, we will leverage Azure AI Search to power personalized recommendations for customers. Azure AI Search allows us to index and analyze customer data, enabling us to recommend relevant loan products based on individual customer preferences and behaviors. We will integrate this search functionality with Contoso Bank’s existing systems to ensure seamless data flow and accurate recommendations.
 
 
-### **Task 1 : Access and Explore the Chatapp.**
+### **Task 1: Access and Explore the Chatapp.**
 
-In this task, we explore the chatapp
+In this task, we explore the chat-app
 
-1.  Go back Azure Portal Home page. Search for `App Services and select it from drop down as shown in the below image.
+1.  Go back Azure Portal Home page. Search for `App Services' and select it from the drop-down as shown in the below image.
 
     ![](./media/image150.png)
 
-2.  Click on App name.
+2.  Click on the App name.
 
     ![](./media/image151.png)
 
-3.  Expand **Settings** and select **Environmental variables**. Search for **Azure AI Search** and make sure all the variable are updated
+3.  Expand **Settings** and select **Environmental variables**. Search for **Azure AI Search** and make sure all the variables are updated
     correctly. Click on **Azure_SEARCH_KEY.**
 
     ![](./media/image152.png)
 
 4.  Get the key from your Setup Azure AI Search service task ( Resource group- > Azure AI search service- > Settings- > Keys -> Key 1),
-    enter the key in Value field and then click on Apply.
+    enter the key in the Value field and then click on Apply.
 
     ![](./media/image153.png)
 
-5.  Click on **Add** now to add AML model endpoint value.
+5.  Click on **Add** now to add the AML model endpoint value.
 
     ![](./media/image154.png)
 
@@ -67,11 +67,11 @@ In this task, we explore the chatapp
 
     ![](./media/image156.png)
 
-7.  Switch back App service tab, Enter below values and then click on  **Apply**.
+7.  Switch back to the App service tab, Enter the below values, and then click on  **Apply**.
 
-    - Name : `AML_ENDPOINT`
+    - Name: `AML_ENDPOINT`
 
-    - Value : Your AML REST endpoint value.
+    - Value: Your AML REST endpoint value.
 
     ![](./media/image157.png)
 
@@ -84,7 +84,7 @@ In this task, we explore the chatapp
     ![](./media/image159.png)
 
 10. From the collapsible left menu under **Settings**, select **Authentication**. **Delete** the existing Identity provider
-    and confirm deletion.
+    and confirm the deletion.
 
     ![](./media/image160.png)
 
@@ -92,7 +92,7 @@ In this task, we explore the chatapp
 
     ![](./media/image161.png)
 
-12. Select Microsoft as Identity provider, update Name and select Client secret expiration -90 days and then click **Next:Permissions**.
+12. Select Microsoft as the Identity provider, update Name select Client secret expiration -90 days and then click **Next: Permissions**.
 
     ![](./media/image162.png)
 
@@ -112,13 +112,13 @@ In this task, we explore the chatapp
 
     ![](./media/image166.png)
 
-11. App opens in new tab, Click on **Accept** to allow permissions.
+11. The app opens in a new tab, Click on **Accept** to allow permissions.
 
     ![](./media/image167.png)
 
-12. App opens,enter below prompts and explore it.
+12. The app opens, enter the below prompts and explore it.
 
-    `List high value customers`
+    `List high-value customers`
 
     `give customer details whose mortgage is not 0`
 
