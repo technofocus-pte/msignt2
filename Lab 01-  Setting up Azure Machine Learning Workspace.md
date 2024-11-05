@@ -67,18 +67,15 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image4.png)
 
-7. Lets now run this script to create thre required resources in an Azure resource group within the assigned subscription. This script will register the Machine Learning resource providers,create resource group, Azure Machine Learning workspace ,compute instance and compute cluster in AML workspace.
+7. Lets now run this script to create thre required resources in an Azure resource group within the assigned subscription. 
 
     +++cd MLOps-Driven-Chatbot-with-Azure-AI-AML-and-Azure-AI-Search-Integration/scripts/+++
 
     +++chmod +x setup.sh+++
-8. Run below setup script now by executing this command.
+8. Run below setup script now by executing this command. This script will register the Machine Learning resource providers, create an Azure Machine Learning workspace, a compute instance and a compute cluster in AML workspace.
     +++./setup.sh+++
 
     ![](./media/image5.png)
-
-9. Wait for the script to run completely. It takes 4-5 minutes to
-    complete.
 
 7. Wait for the script to complete. It takes 4-5 minutes for the script to run.
 
@@ -92,79 +89,70 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
     ![](./media/image8.png)
 
-10. Click on resource group name.
+10. Click on your resource group name. 
 
     ![](./media/image9.png)
 
-11. Make sure all the resources are created.
+11. Explore the details pane to ensure all the resources including an AML workspace, a storage account, a Key vault and a Log Analaytics workspace are created successfully.
 
-8. Close the **Cloud shell** and click on **Resource Group** tile.
+13. Click on **Azure Machine Learning workspace** name. Click on Launch Studio button. The AML Studio is launched in a new browser tab.
+14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
+15. Click on Compute (in the Manage section) from the left navigation menu, to verify that a Compute instance is already Running.
+16. Now click on Compute clusters from the top menu, to verify that a compute cluster was successfully deployed.
 
-    ![](./media/image8.png)
-
-9. Click on your resource group name.
-
-    ![](./media/image9.png)
-
-10. Go through the list of the resources to ensure all the resources are created.
-
-
-    ![](./media/image10.png)
-
-12. Click on **Azure Machine Learning workspace** name.
-
+### To be removed ##
     ![](./media/image11.png)
 
-13. Click on **Access control (IAM)** from left navigation menu, click
+17. Click on **Access control (IAM)** from left navigation menu, click
     on **Add -> Add role assignment.**
 
     ![](./media/image12.png)
 
-14. Select **Privileged administrator roles -> Contributor** role and
+18. Select **Privileged administrator roles -> Contributor** role and
     then click **Next.**
 
     ![](./media/image13.png)
 
-15. Select **user,group or service principal** radio button, click on
+19. Select **user,group or service principal** radio button, click on
     **Select members** link. Search for your Azure subscription tenant
     ,select it and then click on **Select**.
 
     ![](./media/image14.png)
 
-16. Click on **Review +assign**.
+20. Click on **Review +assign**.
 
     ![](./media/image15.png)
 
-17. Again,click on **Review + assign**.
+21. Again,click on **Review + assign**.
 
     ![](./media/image16.png)
 
-18. Click on **Overview** from left navigation and then click on
+22. Click on **Overview** from left navigation and then click on
     **Launch studio** button.
 
     ![](./media/image17.png)
 
-19. AML studio opens in new tab. Sign in with your Azure subscription
+23. AML studio opens in new tab. Sign in with your Azure subscription
     account.
 
     ![](./media/image18.png)
 
-20. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
+24. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
 
     ![](./media/image19.png)
 
-21. Click on **Compute clusters** , cluster should have created
+25. Click on **Compute clusters** , cluster should have created
     successfully.
 
     ![](./media/image20.png)
 
 
->#### **Summary:** By the end of this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
+>#### **Summary:** In this this task, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
 
 
 ### **Task 2 : Assign roles to the subscription**
 
-> We need to assign sufficient roles and permissions to your user account on the created resource group in order to be able to index and enrich the customer data, and to be able to create OpenAI services in the workspace.
+> We need to configure appropriate Role Assignments on the resource group for your user Azure account in order to be able to index and enrich the customer data, and to be able to create OpenAI services in the AML workspace.
 
 1. Switch back to **Azure portal** home page and click on **Resource group** tile.
 
