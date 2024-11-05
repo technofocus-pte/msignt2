@@ -7,7 +7,7 @@
 
 
 #### **Introduction:**
-In this exercise, we will focus on registering datasets ,building and training machine learning models that predict borrower behavior. Using Azure Machine Learning, we will develop models that analyze historical customer data to forecast potential borrowers’ likelihood of loan conversion. After building the models, we will register them within the Azure ML workspace for further deployment and monitoring. This task emphasizes the importance of creating accurate and scalable models that drive personalized marketing.
+In this lab, we will focus on registering datasets ,building and training machine learning models that predict borrower behavior. Using Azure Machine Learning, we will develop models that analyze historical customer data to forecast potential borrowers’ likelihood of loan conversion. After building the models, we will register them within the Azure ML workspace for further deployment and monitoring. This task emphasizes the importance of creating accurate and scalable models that drive personalized marketing.
 
 
 ### **Task 1 : Register Datasets**
@@ -23,7 +23,7 @@ In this exercise, we will focus on registering datasets ,building and training m
 
     ![](./media/image43.png)
 
-3.  On this page, notice that there are several options to choose a source for your dataset including, Azure storage, SQL databases, web files, local files and event Azure Open Datasets. We will choose the Local files as our source in this lab. Select From local files and then click **Next**
+3.  On this page, notice that there are several options to choose a source for your dataset including, Azure storage, SQL databases, web files, local files and event Azure Open Datasets. We will choose the Local files as our source in this lab. Select **From local files** and then click **Next**
 
     ![](./media/image44.png)
 
@@ -95,6 +95,6 @@ In this task,we learn how to access the python SDK notebook from AML
 
     ![](./media/image58.png)
 
-6. Stay back in the same page to continue.
+6. Stay in the same page to continue with the next lab.
 
 >#### **Summary:** We have successfully registered data sets, built and registered predictive models that analyze borrower behavior. These models are now stored in the Azure Machine Learning registry, ready for further deployment and continuous monitoring. With this task completed, Contoso Bank can begin using these models to drive more targeted marketing efforts and improve borrower conversion rates.
