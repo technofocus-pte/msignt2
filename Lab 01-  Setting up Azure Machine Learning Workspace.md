@@ -221,10 +221,9 @@ In this exercise, we will set up the foundational components of the Azure Machin
 
 ### **Task 3 : Upload Contoso Bank loan documents into Azure Storage account**
 
- When you create an Azure Machine Learning workspace, a Storage Account
-is automatically created and connected to your workspace.Upload Contoso Bank loan documents and access them to answer customer queries in Chatapp
+When you create an Azure Machine Learning workspace, an Azure Storage Account is created automatically, and connected to your AML workspace. In this task, we will upload Contoso Bank's customer loan documents in the Azure Storage Account. Information in these files will be used to ground the search performed by AI models to answer customer queries in the chat app built later in the lab.
 
-1.  In **Azure portal- > Resource group** , click on Storage account name
+1.  In **Azure portal- > Resource group** , click on your Storage account name
 
     ![](./media/image36.png)
 
@@ -236,8 +235,7 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image38.png)
 
-4.  Click on **Upload -> Browse for files** . select the below files from **C:\Labfiles\Resources** folder and then click on **Open**.
-
+4.  Click on **Upload -> Browse for files** . select and upload the following files from **C:\Labfiles\Resources** folder in your lab VM:
     - Contoso Bank Home loan FAQS.pdf
     - Contoso Bank Home loan Guide.pdf
     - Contoso Personal Loan FAQs.pdf
@@ -252,5 +250,4 @@ is automatically created and connected to your workspace.Upload Contoso Bank loa
 
     ![](./media/image41.png)
 
->#### **Summary:** By the end of this exercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform tasks. These foundational steps ensure that we have a secure, scalable environment in place to support the bank's data science and marketing initiatives.
-
+>#### **Summary:** In this exercise, we successfully created an Azure Machine Learning workspace and configured compute resources, which will be used for training and deploying machine learning models with required permissions to perform the tasks. These foundational steps ensure that we have a secure, scalable environment in place to support Contoso Bank's data science and marketing initiatives.
