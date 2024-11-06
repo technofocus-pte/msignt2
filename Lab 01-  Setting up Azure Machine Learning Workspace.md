@@ -1,4 +1,4 @@
-### **Implementing Machine Leaning and MLOps for Targeted custmer marketing with Azure Machine Learning**
+`### **Implementing Machine Leaning and MLOps for Targeted custmer marketing with Azure Machine Learning**
 
 #### **Introduction**
 Contoso Bank is undergoing a comprehensive digital transformation across all its departments to enhance their operational efficiency and customer engagement. Currently, the bank's customer base is predominantly composed of liability customers (depositors), while the asset customer base (borrowers) is relatively smaller. The bank aims to rapidly expand its asset customer segment to generate additional revenue through loan interests.
@@ -198,8 +198,6 @@ In this exercise, we will set up the foundational components of the Azure Machin
     `Cognitive Services OpenAI User`
 
     `Search Service Contributor`
-
-    `Azure AI Developer`
 
     ![](./media/image29.png)
 
