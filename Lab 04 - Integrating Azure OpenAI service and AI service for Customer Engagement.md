@@ -10,7 +10,7 @@
 
 # Integrating Azure OpenAI service and AI service for Customer Engagement
 
->**Introduction:** :In this task, we will integrate the Azure OpenAI chatbot into Contoso Bank’s customer engagement platforms. The chatbot will serve as an interactive tool for customers, helping them explore loan products, get personalized loan recommendations, and receive real-time assistance. We will use Azure OpenAI’s natural language processing capabilities to ensure the chatbot delivers a smooth, human-like experience while collecting valuable customer data for further analysis.
+>**Introduction:** In this task, we will integrate the Azure OpenAI chatbot into Contoso Bank’s customer engagement platforms. The chatbot will serve as an interactive tool for customers, helping them explore loan products, get personalized loan recommendations, and receive real-time assistance. We will use Azure OpenAI’s natural language processing capabilities to ensure the chatbot delivers a smooth, human-like experience while collecting valuable customer data for further analysis.
 
 ### **Task 1 : Set Up Azure AI Search service**
 
@@ -44,19 +44,19 @@ In this task, we create Azure AI Search service for enriching the chatbot with s
 
     ![](./media/image89.png)
 
-6.  Open a Notepad and make a note of URL value as  **AZURE_SEARCH_ENDPOINT** ,we use it to communicate to the service.
+6.  Open a Notepad and make a note of URL value as  **AZURE_SEARCH_ENDPOINT**. We will use it later to communicate to the service.
 
     ![](./media/image90.png)
 
-7.  Navigate to the **Keys** section and grab the API Key and save it as **AZURE_SEARCH_KEY** in your notepad. You will need this to communicate     with the service.
+7.  Navigate to the **Keys** section (exapnd **Settings**). Copy the API Key (Primary admin key) and save it as **AZURE_SEARCH_KEY** in your notepad. You will need this later to communicate with the service.
 
     ![](./media/image91.png)
 
 ### **Task 2 : Create Azure AI multi-service resource**
 
-In this task, We create AI multi-service for NLP to enrich data and interact with customer through chatapp
+In this task, we will create an AI multi-service resource for NLP to enrich data and interact with customers through the chat app.
 
-1.  Create an Azure AI multi-service resource in the **same region as your search service region.**
+1.  Follow the steps below to create an Azure AI multi-service resource in the **same region (location) as that of your Azure search service**.
 
 2.  Open a new tab in a browser and go to  `https://portal.azure.com/#create/Microsoft.CognitiveServicesAllInOne`
     Sign in with your Azure subscription account
