@@ -88,20 +88,19 @@ In this task, we will create an AI multi-service resource for NLP to enrich data
 
     ![](./media/image95.png)
 
-6.  Select **Keys and Endpoint** under the **Resource Management** in the left navigation menu.Make a note of the AZURE_MULTISERVICE_ENDPOINT and Key 1 values as these will be used later in the lab to communicate with this service.
+6.  Select **Keys and Endpoint** under the **Resource Management** in the left navigation menu. Make a note of the **Key 1** value as **AZURE_MULTISERVICE_ENDPOINT** in the notepad, as these will be used later in the lab to communicate with this service.
 
     ![](./media/image96.png)
 
 ### **Task 3 : Create Azure OpenAI resource**
 
-In this task, we create Azure OpenAI resource to deploy OpenAI models for embeddings and completions to use them in Chatapp
+In this task, we will create Azure OpenAI resource to deploy OpenAI models for embeddings and completions to use them in our Chat app
 
-1.  Open a new tab and search for `Azure OpenAI` service and select
-    it.
+1.  Navigate to Azure Portal in a new tab and search for `Azure OpenAI` service and select it.
 
     ![](./media/image97.png)
 
-2.  Click on **Create**.
+2.  Click on **Create** button in the top menu.
 
     ![](./media/image98.png)
 
@@ -119,7 +118,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
     ![](./media/image99.png)
 
-4.  Click on **Next- > Next- > Create.**
+4.  Click on **Next- > Next- > Create** slelecting the default settings.
 
     ![](./media/image100.png)
 
@@ -127,40 +126,38 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
     ![](./media/image102.png)
 
-5.  Once the deployment completes, click on **Go to resource**
+5.  Once the deployment completes, click on **Go to resource**.
 
     ![](./media/image103.png)
 
-6.  Expand Resource management from left navigation ,click on **Keys and  Endpoint**.Copy endpoint value and assign to **AZURE_OPENAI_ENDPOINT** ,
-    Copy key and assign to **AZURE_OPENAI_KEY**.Save both these variables in     your Notepad
+6.  Expand Resource management from left navigation ,click on **Keys and  Endpoint**. Copy URL in the **Endpoint** field and save in your notepad as **AZURE_OPENAI_ENDPOINT**.
+    Copy the **Key 1** value and save as **AZURE_OPENAI_KEY**. 
 
     ![](./media/image104.png)
 
-7.  Click on **Overview**, click on **Go to Azure OpenAI Studio** and Azure OpenAI studio open in new tab.
+7.  Click on **Overview** tab on the left navigation panel, and then click on **Go to Azure OpenAI Studio**. Azure OpenAI Studio opens in new tab.
   
-
-8.  Azure OpenAI opens in new tab. Sign in if required. Close the pop -ups
+8.  Sign in if required. Close the pop-ups that appear.
 
     ![](./media/image106.png)
 
-9.  Click on **Deployment** from left navigation menu, select **Deploy model -> Deploy base model.**
+9.  Click on **Deployment** from left navigation menu. In the **Deploy model** drop down menu select **Deploy base model.**
 
     ![](./media/image107.png)
 
-10. Search for `gpt-35-turbo-16k` and select it and then click on **Confirm**.GPT-3.5 models can understand and generate natural language or code. The most capable and cost effective model in the GPT-3.5 family is GPT-3.5 Turbo, which has been optimized for chat and works well for traditional completions tasks as well.
+10. Search for `gpt-35-turbo-16k` and select it. Click on **Confirm**. GPT-3.5 models can understand and generate natural language or code. GPT-3.5 Turbo is the most capable and cost effective model in the GPT-3.5 family, which has been optimized for chat and works well for traditional completions tasks as well.
 
     ![](./media/image108.png)
 
-11. Click on **Customize** button
+11. In the deployment dialogbox, click on **Customize** button
 
     ![](./media/image109.png)
 
-12. Select available region(same region as your Azure OpenAI region) and set Tokens per Minute Rate limit to max and then click on
-    **Deploy**.
+12. Set **Tokens per Minute Rate limit** to max and then click on **Deploy**.
 
     ![](./media/image110.png)
 
-13. Repeat above steps and deploy- `text-embedding-ada-002` (text-embedding-ada-002 outperforms all the earlier embedding models on text search, code search, and sentence similarity tasks and gets comparable performance on text classification. Embeddings are numerical representations of concepts converted to number sequences, which make it easy for computers to understand the relationships between those concepts.)
+13. Repeat above steps and deploy `text-embedding-ada-002` model as well. Text-embedding-ada-002 outperforms all the earlier embedding models on text search, code search, and sentence similarity tasks and gets comparable performance on text classification. Embeddings are numerical representations of concepts converted to number sequences, which make it easy for computers to understand the relationships between those concepts.
 
     ![](./media/image111.png)
 
@@ -174,7 +171,7 @@ In this task, we create Azure OpenAI resource to deploy OpenAI models for embedd
 
 ### **Task 4 : Add a data source to Azure AI search service**
 
-In this task, we add data sources of all resources to enrich data.
+In this task, we will add our Azure storage container as the data source for all our resources that will be used to enrich data.
 
 1.  Switch back to **Azure portal -> Resource group- > Azure AI search service.**
 
@@ -195,6 +192,7 @@ In this task, we add data sources of all resources to enrich data.
     - Storage account- your Azure storage account
 
     - Blob container -  `azureml-blobstore-XXXX` (your default blob container where raw data is uploaded.)
+    - Blob Folder - (Leave blank)
 
     ![](./media/image117.png)
 
@@ -202,36 +200,41 @@ In this task, we add data sources of all resources to enrich data.
 
 ### **Task 5: Create skillsets in Azure AI search**
 
-In this task, we create a skillset  object in Azure AI Search that's attached to an indexer. It contains one or more skills that are called built-in AI 
+In this task, we will create a skillset  object in Azure AI Search that's attached to an indexer.It contains one or more skills that call built-in AI or external custom processing over documents retrieved from an external data source. Creating and mappink the skills will enhance the in saerch we perform on the index.
 
-1.  On the Overview page, click on **Import data** tab.
+1. On the **Identity** page of your Azure AI search service, turn on **System assigned** Managed Identity. Click **Save** on the top menu to generate the Object ID of the managed identity.
+2. Copy the **Object ID** of the managed identity created, and click on 88Azure Role Assignments** button to assign the required permissions to this ID.
+3. Click on **Add role assignments (Preview)** on the top menu.
+4. In the **Scope** drop down, select **Storage**.
+5. In the **Resource** drop down, select your storage account.
+6. Search and assign the **Storage Blob Data Reader** role to this Managed Identity on your azure storage.
+7. On the Overview page of your Azure Search service, click on **Import data** from the top menu.
 
     ![](./media/image119.png)
 
-2.  Select **Existing data source** and select **enrichdatasourc**, then
-    click **Next: Add cognitive skill (Optional)**
+8.  Keep **Existing data source** selected from the **Data Source** drop down, and select **enrichdatasourceXXXX** (your data source). Then click on **Next: Add cognitive skills (Optional)**.
 
     ![](./media/image120.png)
 
-3.  Expand **Attach AI Services** and select the AI multi-service
+9.  Expand **Attach AI Services** and select the AI multi-service
     created in the previous task.
 
     ![](./media/image121.png)
 
-4.  Expand **Add enrichments** ,keep default skillset name. Enable OCR and select all Extract personally identifiable information **except
+10.  Expand **Add enrichments** ,keep default skillset name. Enable OCR and select all Extract personally identifiable information **except
     Extract personally identifiable information** then click on **Next: Customize target index.**
 
     ![](./media/image122.png)
 
-5.  Enter Index name as - **customer-index ,** click on **Add filed**.
+11.  Enter Index name as - **customer-index ,** click on **Add filed**.
 
     ![](./media/image123.png)
 
-6.  Enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
+11.  Enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
 
     ![](./media/image124.png)
 
-7.  Add the below fields and then click **Next: Create an indexer**
+11.  Add the below fields and then click **Next: Create an indexer**
 
     - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
@@ -244,7 +247,7 @@ In this task, we create a skillset  object in Azure AI Search that's attached to
 
     ![](./media/image125.png)
 
-8.  Enter the indexer name : `customer-azureblob-indexer` and click **submit**.
+11.  Enter the indexer name : `customer-azureblob-indexer` and click **submit**.
 
     ![](./media/image126.png)
 
