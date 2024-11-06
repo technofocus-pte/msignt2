@@ -1,55 +1,8 @@
-### **Lab 06 - Continuous Monitoring and Model Management**
+### **Lab 06 - Continuous Monitoring and Model Management (Optional)**
 
-Contoso Bank is undergoing a comprehensive digital transformation across
-all its departments to enhance their operational efficiency and customer
-engagement. Currently, the bank's customer base is predominantly.
-composed of liability customers (depositors), while the asset customer
-base (borrowers) is relatively smaller. The bank aims to rapidly expand
-its asset customer segment to generate additional revenue through loan
-interests.
+**In this lab you will:**
 
-In the previous quarter, the bank launched a marketing campaign
-targeting potential borrowers, which resulted in an average conversion
-rate in the single digits. As part of its digital transformation
-strategy, the marketing department seeks to design more effective
-campaigns that leverage targeted marketing techniques. The goal is to
-significantly increase the conversion ratio to double digits while
-maintaining the same budget as the last campaign. This initiative is
-pivotal for driving growth and maximizing the bank's profitability
-through increased borrowing activity.
-
-**Lab Objective**
-
-"As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution."
-
-**At the end of this lab you will know how-to:**
-
-
-- Exploring  Azure AI Bot Service for customer engagement using chatbot
-
-**Tools/Technologies/Apps used :**
-
-1.  **Azure Machine Learning (AML)**: For building, training, and
-    deploying the predictive model in the banking scenario.
-
-2.  **MLOps**: For covering model training, deployment, and automated model
-    management.
-
-3.  **Azure AI Studio**: Used to create, configure, and deploy the
-    chatbot powered by Azure AI and integrated with the AML model.
-
-4.  **Azure AI Search**: For enriching the chatbot with search and query
-    capabilities based on customer data and loan details.
-
-5.  **Azure App Service**: To host and manage the deployed web
-    application (chat app).
-
-6.  **Azure Blob Storage**: For storing and managing datasets used in
-    training and prediction.
-
-7.  **Python SDK**: For interacting with Azure services, building the
-    model and working with data pipelines.
+- Use Azure AI Bot Service for customer engagement using chatbot
 
 # Exercise 1 : Setting up Azure Machine Learning Workspace
 #### **Introduction:**
