@@ -1,32 +1,10 @@
 ### **Lab 05 -Leveraging Azure AI Search for Personalized Recommendations**
 
-Contoso Bank is undergoing a comprehensive digital transformation across
-all its departments to enhance its operational efficiency and customer
-engagement. Currently, the bank's customer base is predominantly.
-composed of liability customers (depositors), while the asset customer
-base (borrowers) is relatively smaller. The bank aims to rapidly expand
-its asset customer segment to generate additional revenue through loan
-interests.
 
-In the previous quarter, the bank launched a marketing campaign
-targeting potential borrowers, which resulted in an average conversion
-rate in the single digits. As part of its digital transformation
-strategy, the marketing department seeks to design more effective
-campaigns that leverage targeted marketing techniques. The goal is to
-significantly increase the conversion ratio to double digits while
-maintaining the same budget as the last campaign. This initiative is
-pivotal for driving growth and maximizing the bank's profitability
-through increased borrowing activity.
+**In this lab you will learn how-to:**
 
-**Lab Objective**
-
-"As part of a POC, Contoso Bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso Bank's AI engineering team to build this app, which makes use of Azure AI, AML, and MLOps to achieve the solution."
-
-**At the end of this lab you will know how-to:**
-
-- Use Azure AI Search Services to enrich the chatbot with search
-- use Azure AI Bot Service for customer engagement using a chatbot
+- Use Azure AI Search Services to enrich the chatbot's search capabilities
+- Use Azure AI Bot Service for customer engagement using a chatbot
 
 
 
@@ -43,17 +21,15 @@ In this task, we explore the chat-app
 
     ![](./media/image150.png)
 
-2.  Click on the App name.
+2.  Click on the your App name thats running.
 
     ![](./media/image151.png)
 
-3.  Expand **Settings** and select **Environmental variables**. Type `Search` in the search bar to list  **Azure AI Search** service.Make sure all the variables are updated
-    correctly. Click on **Azure_SEARCH_KEY.**
+3.  Expand **Settings** and select **Environmental variables**. Type `Search` in the search bar to list  Azure AI Search services. In order to make sure all the variables are updated correctly. Click on **AZURE_SEARCH_KEY.**
 
     ![](./media/image152.png)
 
-4.  Get the key from your Setup Azure AI Search service task ( Resource group- > Azure AI search service- > Settings- > Keys -> Key 1),
-    enter the key in the Value field and then click on Apply.
+4.  Get the key value you saved for this Key in your note pad earlier or copy from your Setup Azure AI Search service task ( Resource group- > Azure AI search service- > Settings- > Keys -> Key 1). Enter the key in the Value field and then click on **Apply**.
 
     ![](./media/image153.png)
 
@@ -75,7 +51,7 @@ In this task, we explore the chat-app
 
     ![](./media/image157.png)
 
-8.  Click on **Apply** and **confirm** changes.
+8.  Click on **Apply** and **confirm** changes on the **Environment Variables** page.
 
     ![](./media/image158.png)
 
@@ -91,11 +67,11 @@ In this task, we explore the chat-app
 
     ![](./media/image161.png)
 
-13. Select Microsoft as the Identity provider, update Name select Client secret expiration -90 days and then click **Next: Permissions**.
+13. Select Microsoft as the Identity provider, update Name as `MSIdproverXXXX` (replce XXXX with a unique set of number). Select **Client secret expiration** duration as 90 days and then click **Next: Permissions**.
 
     ![](./media/image162.png)
 
-14. Click on Add permission. Select **Application** -> Application.ReadWrite.All and then click on **Update permission.**
+14. Click on Add permission. Scroll down in the list to expand **Application** and select **Application.ReadWrite.All**. Then click on **Update permission.**
 
     ![](./media/image163.png)
 
@@ -103,15 +79,15 @@ In this task, we explore the chat-app
 
     ![](./media/image164.png)
 
-16.  Click on **Overview** and click on **Restart**. Confirm restart by clicking on **Yes**.
+16.  Click on **Overview** page of the app. Wait for the page to load and then click on **Restart**. Confirm restart by clicking on **Yes**.
 
     ![](./media/image165.png)
 
-10. Click on **Overview** and then click **on Default domain**.
+10. Click on **Overview** and then click on **Browse** in the top menu.
 
     ![](./media/image166.png)
 
-11. The app opens in a new tab, Click on **Accept** to allow permissions.
+11. The app opens in a new tab. Review and **Accept** to allow permissions.
 
     ![](./media/image167.png)
 
