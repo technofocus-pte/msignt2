@@ -1,12 +1,7 @@
 ### **Lab 04 - Integrating Azure OpenAI service and AI service for Customer Engagement**
 
 
-**Lab Objective**
-
-"As part of a POC, Contoso bank's marketing team would like to work with the Data Analytics and AI engineering teams who can help them build an app that uses data-driven AI-enhanced strategies to improve campaign targeting, so the marketing team can aim for a double-digit conversion rate of the asset customer base within the same budget.
-In this lab, you will work on behalf of Contoso bank's AI engineering team to build this app, which makes use of Azure AI, AML and MLOps to achieve the solution."
-
-**At the end of this lab you will know how-to:**
+**In this lab you will learn how-to:**
 
 - Use AI-based recommendation systems for prediction
 - Using insights from the enhanced segmentation
