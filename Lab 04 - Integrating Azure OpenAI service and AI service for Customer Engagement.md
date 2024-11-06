@@ -225,15 +225,15 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image122.png)
 
-11.  Enter Index name as - `customer-index`, and click on **Add field**.
+11.  Enter Index name as - `customer-index`, and click on **Add field** on top of the field table.
 
     ![](./media/image123.png)
 
-11.  Enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
+11.  In the new field row that gets added at the bottm of the table, enter **Field name** as : `customer_id`, select type="Edm.String" and select all skills
 
     ![](./media/image124.png)
 
-11.  Add the below fields and then click **Next: Create an indexer**
+11.  Repeat the above 2 steps to also add the below fields and then click **Next: Create an indexer**
 
     - Field name -  `customer_name` , Type - Edm.String , Skills -All
 
@@ -246,7 +246,7 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image125.png)
 
-11.  Enter the indexer name : `customer-azureblob-indexer` and click **submit**.
+11.  Enter the indexer name : `customer-azureblob-indexer` and click **Submit** for the skills to be created.
 
     ![](./media/image126.png)
 
@@ -256,16 +256,16 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image128.png)
 
-7.  Click on **Indexes -> customer-index.** Wait for the Vetor index size to update.
+7.  Click on **Indexes**. Note the new **customer-index** created. Wait for the Vector index size to update.
 
     ![](./media/image129.png)
 
 
 ### **Task 6: Build and Deploy Chat app in Azure AI Studio.**
 
-In this task, we create, configure, and deploy the chatbot powered by Azure AI and integrated with the AML model.
+In this task, we will create, configure, and deploy the chatbot powered by Azure AI, integrated with our AML model.
 
-1.  Open a new tab, go to `https://ai.azure.com` and sign in with your Azure subscription account.
+1.  Open a new tab, navigate to `https://ai.azure.com` and sign in with your assigned Azure account.
 
     ![](./media/image131.png)
 
@@ -286,7 +286,7 @@ In this task, we create, configure, and deploy the chatbot powered by Azure AI a
 
     - Resource group - your existing resource group
 
-    - Region -same region as your Azure Open AI region
+    - Location -same location (region) as your Azure Open AI service region
 
     - Connect Azure AI Services or Azure OpenAI: Select your Azure OpenAI service
 
@@ -294,14 +294,13 @@ In this task, we create, configure, and deploy the chatbot powered by Azure AI a
 
     ![](./media/image134.png)
 
-5.  Review the details and then click on **Create a project** button.
+5.  Review the details and then click on **Create a project** button. Wait until the project creation finishes.
 
     ![](./media/image135.png)
 
     ![](./media/image136.png)
 
-6.  click on **Chat** from the left navigation menu under **Playground**.In Setup, select **Add your data** and then click on **Add a new
-    data source**.
+6.  Click on **Chat** from the left navigation menu under **Project Playground**. In Setup section in the details pane, expand **Add your data** and then click on **Add a new data source**.
 
     ![](./media/image137.png)
 
@@ -309,27 +308,27 @@ In this task, we create, configure, and deploy the chatbot powered by Azure AI a
 
     ![](./media/image138.png)
 
-8.  Select your **Azure AI Search** service and the Index your  **customer-index**,then click Next.
+8.  Select your **Azure AI Search** service from the drop-down menu, and then select **customer-index** that you created previusly, and then click **Next**.
 
     ![](./media/image139.png)
 
-9.  Keep the default values, click Next.
+9.  In the **Vector Index**, keep the default value (customer-index), click **Next**.
 
     ![](./media/image140.png)
 
-10. Click on **Create** now.
+10. Click on **Create Vector Index**.
 
     ![](./media/image141.png)
 
     ![](./media/image142.png)
 
-11. Enter the below prompt in the Type here query text body and press the send button.
+11. Enter the below prompt in the **Type user query here** text box and press the send button.
 
     `Details of Customer ID- 3`
 
     ![](./media/image143.png)
 
-12. Enter below prompt and press send
+12. Once response is received, enter the below prompt next and press send
 
     `List high-value customers`
 
@@ -337,7 +336,7 @@ In this task, we create, configure, and deploy the chatbot powered by Azure AI a
 
     ![](./media/image145.png)
 
-13. Now, you are ready to deploy your app. Click on **Deploy- > as a web app.**
+13. Now, you are ready to deploy your app. Click on **Deploy- > as a web app** from the top menu.
 
     ![](./media/image146.png)
 
