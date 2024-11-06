@@ -216,17 +216,16 @@ In this task, we will create a skillset  object in Azure AI Search that's attach
 
     ![](./media/image120.png)
 
-9.  Expand **Attach AI Services** and select the AI multi-service
-    created in the previous task.
+9.  Expand **Attach AI Services** and select the AI multi-service resource created in the previous task.
 
     ![](./media/image121.png)
 
-10.  Expand **Add enrichments** ,keep default skillset name. Enable OCR and select all Extract personally identifiable information **except
-    Extract personally identifiable information** then click on **Next: Customize target index.**
+10.  Expand **Add enrichments**, keep default skillset name, check **enable OCR** and select all **checked items requiring a filed name** except
+    **Extract personally identifiable information** then click on **Next: Customize target index.**
 
     ![](./media/image122.png)
 
-11.  Enter Index name as - **customer-index ,** click on **Add filed**.
+11.  Enter Index name as - `customer-index`, and click on **Add field**.
 
     ![](./media/image123.png)
 
