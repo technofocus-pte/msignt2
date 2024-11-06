@@ -1,7 +1,7 @@
 ### **Lab 05 -Leveraging Azure AI Search for Personalized Recommendations**
 
 Contoso Bank is undergoing a comprehensive digital transformation across
-all its departments to enhance their operational efficiency and customer
+all its departments to enhance its operational efficiency and customer
 engagement. Currently, the bank's customer base is predominantly.
 composed of liability customers (depositors), while the asset customer
 base (borrowers) is relatively smaller. The bank aims to rapidly expand
@@ -47,7 +47,7 @@ In this task, we explore the chat-app
 
     ![](./media/image151.png)
 
-3.  Expand **Settings** and select **Environmental variables**. Search for **Azure AI Search** and make sure all the variables are updated
+3.  Expand **Settings** and select **Environmental variables**. Type `Search` in the search bar to list  **Azure AI Search** service.Make sure all the variables are updated
     correctly. Click on **Azure_SEARCH_KEY.**
 
     ![](./media/image152.png)
@@ -79,32 +79,31 @@ In this task, we explore the chat-app
 
     ![](./media/image158.png)
 
-9.  Select **API->CORS** and select
-
-    ![](./media/image159.png)
-
+      
 10. From the collapsible left menu under **Settings**, select **Authentication**. **Delete** the existing Identity provider
     and confirm the deletion.
 
+     ![](./media/image159.png)
+
     ![](./media/image160.png)
 
-11. Click on **Add identity provider**.
+12. Click on **Add identity provider**.
 
     ![](./media/image161.png)
 
-12. Select Microsoft as the Identity provider, update Name select Client secret expiration -90 days and then click **Next: Permissions**.
+13. Select Microsoft as the Identity provider, update Name select Client secret expiration -90 days and then click **Next: Permissions**.
 
     ![](./media/image162.png)
 
-13. Click on Add permission. Select **Application** -> Application.ReadWrite.All and then click on **Update permission.**
+14. Click on Add permission. Select **Application** -> Application.ReadWrite.All and then click on **Update permission.**
 
     ![](./media/image163.png)
 
-14. Click on **Add** now.
+15. Click on **Add** now.
 
     ![](./media/image164.png)
 
-15.  Click on **Overview** and click on **Restart**. Confirm restart by clicking on **Yes**.
+16.  Click on **Overview** and click on **Restart**. Confirm restart by clicking on **Yes**.
 
     ![](./media/image165.png)
 
@@ -116,7 +115,7 @@ In this task, we explore the chat-app
 
     ![](./media/image167.png)
 
-12. The app opens, enter the below prompts and explore it.
+12. The app opens, enter the below prompts, and explore it.
 
     `List high-value customers`
 
