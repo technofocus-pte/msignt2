@@ -99,49 +99,21 @@ In this exercise, we will set up the foundational components of the Azure Machin
 14. Navigate to the Azure AI Machine Learning Studio tab that already has your workspace opened.
 15. Click on **Compute** (in the **Manage** section) from the left navigation menu, to verify that a Compute instance is already **Running**.
 16. Now click on **Compute clusters** from the top menu (next to **Compute instances**), to verify that a compute cluster was successfully deployed.
-
-### To be removed ##
-    ![](./media/image11.png)
-
-17. Click on **Access control (IAM)** from left navigation menu, click
-    on **Add -> Add role assignment.**
-
-    ![](./media/image12.png)
-
-18. Select **Privileged administrator roles -> Contributor** role and
-    then click **Next.**
-
-    ![](./media/image13.png)
-
-19. Select **user,group or service principal** radio button, click on
-    **Select members** link. Search for your Azure subscription tenant
-    ,select it and then click on **Select**.
-
-    ![](./media/image14.png)
-
-20. Click on **Review +assign**.
-
-    ![](./media/image15.png)
-
-21. Again,click on **Review + assign**.
-
-    ![](./media/image16.png)
-
-22. Click on **Overview** from left navigation and then click on
+17. Click on **Overview** from left navigation and then click on
     **Launch studio** button.
 
     ![](./media/image17.png)
 
-23. AML studio opens in new tab. Sign in with your Azure subscription
+18. AML studio opens in new tab. Sign in with your Azure subscription
     account.
 
     ![](./media/image18.png)
 
-24. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
+19. Click on Compute in the Manage section, from the left navigation menu. Note that the AML compute you created is listed and the State is **Running**.
 
     ![](./media/image19.png)
 
-25. Click on **Compute clusters** , cluster should have created
+20. Click on **Compute clusters** , cluster should have created
     successfully.
 
     ![](./media/image20.png)
