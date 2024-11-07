@@ -37,7 +37,7 @@ In this lab, you will work as an AI app developer in Contoso Bank's AI engineeri
 #### **Introduction:**
 In this exercise, we will set up the foundational components of the Azure Machine Learning workspace. This workspace will provide an environment where we train, deploy, and manage machine learning models. The tasks involves creating a new Azure Machine Learning resource, configuring the necessary compute resources, and ensuring that all security and access controls are in place. This environment will serve as the backbone for building predictive models and integrating MLOps into Contoso Bank’s marketing strategies. We are also assigning required permissions to the subscription to perform the above tasks and uploading loan guide documents for chatapp to use and respond to customer queries
 
-**By the end of this lab you will know how-to:**
+**In this lab you will learn how-to:**
 
 - Setup Azure Machine Learning workspace
 
